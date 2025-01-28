@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - i form </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br>   Le propriet&agrave; Transform e Transition</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Floating</a></li>
+                <li> <a href="transform-transition.html" title="Le propriet&agrave; Transform e Transition">Transform &amp; Transition</a></li>
+                <li> <a href="form.html" title="i campi form">Transform &amp; Transition</a></li> <!-- https://www.html5pattern.com/Passwords check this link for regex -->
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>Invio di dati dal sito</h2>
+            <p>L'utente pu&ograve; interagire con il nostro sito in vari modi ed uno di questi, i form, permettono all'utente di inviare dati ed informazioni attraverso internet. I form sono dei moduli di contatto (login, registrazione, modifica e cancellazione) che raccolgono o modificano dati tramite email o database.</p>
+            <h4>nota</h4>
+            <p>Dagli inizi del 2017, google ha iniziato a penalizzare i siti che raccolgono dati servendosi del protocollo http, privilegiando i siti che si servono del protocollo https.</p>
+
+            <h3>Il tag form</h3>
+            <p>Il tag form indica e delimita l'inizio e la fine di un modulo di raccolta dati.</p>
+            <p class="codice">&lt;form action=&quot;URL(lato server che processa i dati) method=&quot;post/get&quot; enctype=&quot;text/plain - multipart/form-data(tipologia di dati passati)&quot;&gt; &lt;/form&gt;</p>
+            
+            <form action="#" method="post" id="formContattoEsempio" enctype="multipart/form-data">
+
+                <label for="nome-cognome">Nome e cognome</label>
+                <input type="text" name="nome-cognome" id="nome-cognome" required placeholder="Inserisci nome e cognome" pattern="(?=.{2,}$)(([a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõőøùúûüųūűÿýżźñçčšžÀÁ ÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕŐØÙÚÛÜŲŪŰŸÝŻŹÑßÇŒÆČŠŽ∂ð ,\.\'\-])\2?(?!\2))+">
+                <br>
+                <label for="email-utente">E-mail</label>
+                <input type="email" name="email-utente" id="email-utente" required placeholder="inserisci la tua e-mail">
+                <br>
+                <label for="data-nascita">Data di Nascita</label>
+                <input type="date" name="data-nascita" id="data-nascita" placeholder="gg/mm/aaaa" required>
+                <br>
+                <label for="sesso_0">
+                    <input type="radio" name="sesso" value="F" id="sesso_0"> F
+                </label>
+                <label for="sesso_1">
+                    <input type="radio" name="sesso" value="M" id="sesso_1"> M
+                </label>
+                <label for="sesso_2">
+                    <input type="radio" name="sesso" value="Altro" id="sesso_2"> Non dichiarato
+                </label>
+
+                <br>
+                <label for="titolo-studio">Titolo di studio</label>
+                <select name="titolo-studio" id="titolo-studio" required>
+                    <option disabled selected hidden>seleziona titolo di studio</option>
+                    <option value="licenza media">Licenza media</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="laurea triennale">Laurea triennale</option>
+                    <option value="magistrale">Laurea magistrale</option>
+                </select>
+                <br>
+                <p>Altri titoli</p>
+                <label for="altri-titoli_0">
+                    <input type="checkbox" name="altri-titoli" value="master" id="altri-titoli_0"> Master
+                </label>
+                <label for="altri-titoli_1">
+                    <input type="checkbox" name="altri-titoli" value="specializzazione" id="altri-titoli_1"> Specializzazione
+                </label>
+                <label for="altri-titoli_2">
+                    <input type="checkbox" name="altri-titoli" value="dottorato" id="altri-titoli_2"> Dottorato
+                </label>
+                <label for="altri-titoli_3">
+                    <input type="checkbox" name="altri-titoli" value="iscrizione all'albo" id="altri-titoli_3"> Iscrizione all'albo
+                </label>
+                <br>
+
+                <label for="esperienzeLav">Descrivi le tue esperienze lavorative</label>
+                <textarea name="esperienzeLav" id="esperienzeLav" required placeholder="Inserisci le tue esperienze lavorative" ></textarea>
+                <br>
+                <textarea name="trattamentodati" id="trattamentodati" readonly cols="30" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt qui consequuntur dicta quia totam quidem! Consequuntur, molestiae, a blanditiis in iure eum accusantium nesciunt repellendus rerum, ratione porro deleniti?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem itaque nostrum deleniti molestias fugit, aliquid molestiae saepe beatae omnis delectus voluptates magni eaque cumque quam inventore consequatur qui repudiandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed libero placeat optio culpa laboriosam quidem saepe minus dolorem omnis dolore sint quas, eaque illum corrupti ex sit corporis doloremque deserunt.
+                </textarea>
+
+                <br>
+                <label for="passwordutente">Password</label>
+                <input type="password" name="passwordutente" id="passwordutente" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{13,24}">
+                <br>
+                <label for="curriculum">Curriculum (Formato PDF, Doc, Docx)</label>
+                <input type="file" name="curriculum" id="curriculum" accept=".gif, .jpg, .docx" required>
+                <br>
+                <label for="accettazione">
+                    <input type="checkbox" name="accettazione" id="accettazione" required value="si"> Ho letto ed accettato la <a href="#" target="_blank">privacy policy</a> del vostro sito web.
+                </label>
+                <br>
+                <input type="submit" value="Invia Messaggio">
+
+            </form>    
+            
+
+        </section>
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

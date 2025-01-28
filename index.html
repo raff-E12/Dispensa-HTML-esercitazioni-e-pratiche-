@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="UTF-8">
+        <meta name="author" content="Raffy U.">
+        <meta name="description" content="sito generico">
+        <meta name="keywords" content="html, css, sass">
+        <title> Guida Html e Css Javascript</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="Frame1.svg">
+        <link rel="manifest" href="dispensa 3/site.webmanifest">
+        <link rel="mask-icon" href="Frame1.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="Frame1.svg">
+        <meta name="msapplication-TileColor" content="#0100ff">
+        <meta name="msapplication-TileImage" content="frame1.svg">
+        <meta name="msapplication-config" content="dispensa 3/browserconfig.xml">
+        <meta name="theme-color" content="#3630af">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            
+            .logo_img img{
+                width: 30%;
+            }
+            .logo_img{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body><!-- Corpo del documento-->
+        <header> <!-- intestazione pagina-->
+            <h1>Guida HTML, CSS e Javascript,<br> Introduzione allo studio dei linguaggi.</h1>
+            <!-- inizio navigazione-->
+            <nav id="menu-desk"> 
+                <div class="menu-ham">
+                    <a href="">Menu</a>
+                    <div class="hamburger">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
+                </div>
+                <ul>
+                    <li> <a href="index.html" title="Homepage della guida HTML,CSS e Javascript" id="linkAttivo"> Home</a></li>
+                    <li> <a href="testi.html" title="i testi nel sito web"> Testi</a></li>
+                    <li><a href="immagini.html" title="immagini del sito"> immagini</a></li>
+                    <li><a href="link.html" title="link per i siti"> Link</a></li>
+                    <li><a href="Iframes.html" title="iframe per i siti">Iframe</a></li>
+                    <li><a href="Foglidistile.html" title="Fogli di stile" >Fogli di stile</a></li>
+                    <li><a href="box-model.html" title="Box Model">Box Model</a></li>
+                    <li><a href="block-inline.html" title="Box Model">Block-Inline</a></li>
+                    <li><a href="position.html" title="Position">Position</a></li>
+                    <li><a href="floating.html" title="Floating">Floating</a></li>
+                    <li><a href="flexbox.html" title="Flexbox">Flexbox</a></li>
+                    <li><a href="transform-transition.html" title="Transform e Transition">Transform - Transition</a></li>
+                    <li><a href="form.html" title="Flexbox">Form</a></li>
+                    <li><a href="dispensa-gol03/index.html" title="Dispensa">Dispensa Gol</a></li>
+                    <li><a href="Esercizio-laylout.html" title="Layout">Esercizio Layout</a></li>
+                    <li><a href="Boot-Strap lezioni/index.html" title="Boot-Strap">Bootstrap Accademy</a></li>
+                    <li><a href="travel-company/index.html" title="Esercizio-figma">Travel Company (Progetto)</a></li>
+                </ul>
+            </nav>
+            <!-- fine navigazione-->
+        </header>
+        <!-- fine intestazione-->
+        <main><!-- contenuto principale della pagina-->
+            <section class="logo_img">
+                <img src="img/klipartz.com.png" class="img_logo">
+            </section>
+            <section>
+                <h2> la rivoluzione di internet</h2>
+                <p> Riguardo l'immagine e la diffussione di documenti, <strong> internet/html/browser</strong> 
+                    fornisce tre importantissime novit&agrave;</p>
+                    <h3> il viewport</h3>
+                    <p> non esistono dimesioni di pagina ed il testo si adatta automaticamente alla parte utile del browser,
+                        detta<strong>viewport</strong>, rifluendo e riorganizzandosi su pi&ugrave; o meno righe. Questo consente di fruire 
+                        dei documenti pubblicati indipendentemante dalle dimesioni ( fisiche e di risoluzione) dello schermo posseduto dal visitatore.
+                        Oggi &agrave;; è una cosa scontata, ma al momento della sua introduzione costitu&igrave; un innovazione fondamentale.
+                    </p>
+                    <h3> il linguaggio</h3>
+                    <p>Nasce un linguaggio &quot;aperto&quot; che non richiede il possesso di 
+                        alcun software dedicato: conoscendo il linguaggio dei marcatori (tag), basta un comunissimo text-editor, 
+                        come il blocco note di Windows, disponibile in qualsiasi sistema operativo, 
+                        per poter scrivere <strong>l'HTML</strong>. Chiaramente gli strumenti messi a 
+                        disposizione inizialmente dal linguaggio erano commisurati alle esigenze 
+                        di produzione e pubblicazione di semplici documenti contenenti esclusivamente testo.</p>
+                        <h3>Il protocollo IP (internet protocol)</h3>
+            <p>Un innovativo sistema di trasporto dati che consente di scambiare dei documenti tra qualsiasi tipo di rete, indipendentemente dall'hardware, dal tipo di connessione e dal sistema operativo. <br>
+            Tutto ci&ograve; rese possibile la diffusione di documenti a livello mondiale. La conoscenza smette di prendere polvere sugli scaffali e si diffonde con una velocit&agrave; inimmaginabile in precedenza. </p>
+            <ul>
+                <li> Questa è la mia email <a href="mailto:raffaelecoppola381@gmail.com">Chiccami se ti va</a></li>
+                <li> collegamento al navigatore gps - <a href=" https://www.google.com/maps/dir//ILAS+ACADEMY+NAPOLI,+Via+Alcide+de+Gasperi,+45,+80133+Napoli+NA/@40.8421362,14.2534045,17z/data=!4m17!1m7!3m6!1s0x133b0846d41bf27f:0x63e9855988389fe1!2sILAS+ACADEMY+NAPOLI!8m2!3d40.8421322!4d14.2559794!16s%2Fg%2F1hhjxkd99!4m8!1m0!1m5!1m1!1s0x133b0846d41bf27f:0x63e9855988389fe1!2m2!1d14.2559794!2d40.8421322!3e1?authuser=0&entry=ttu"> Cliccami!!</a></li>
+                <li> Whatsapp number <a href="tel:3347814325"> Cliccami</a></li>
+                <li> Collegamento per il <a href="cartella 1/immagini/milano3.zip">Download!!</a></li>
+                <li> Contattami per sapere di più <a href="https://wa.me/393347814325?text=sei%scemo%si%o%no" target="_blank"> Messaggia!!</a></li>
+            </ul>
+            </section>
+        </main>
+        <footer><!-- inizio piedipagina-->
+            <p> &copy; Copyright by Raffaele Coppola</p>
+        </footer>  <!-- fine piedipagina-->
+    </body>
+</html>

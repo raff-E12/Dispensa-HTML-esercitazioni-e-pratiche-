@@ -1,0 +1,40 @@
+#navbar-academy{
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+#links{
+    color: white;
+}
+
+i{
+    margin-right: 4px;
+}
+#navbar-academy .navbar-toggler {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#hero-ba{
+    background-image: url('../img/Bg-hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sideFooter{
+    background-color: rgb(38, 38, 38);
+}
+
+#list-groupA{
+   background-color: transparent;
+   border-bottom: 2px solid white;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+
+footer a {
+    text-decoration: none;
+    color:  white;
+}

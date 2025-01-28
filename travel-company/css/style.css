@@ -1,0 +1,543 @@
+
+/* font-family: "Inter", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 716;
+    font-style: normal;
+    color: white;
+}
+
+p, small, ul, a, strong{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 287;
+    font-style: normal;
+    color: white;
+}
+
+
+/* :root{
+    --premaryFont: "Inter", sans-serif;
+    --premaryColor: #7ae4ffff;
+} 
+
+body{
+    font-family: var(--premaryFont);
+} */
+
+/* utilizzare la ripetizione di una proprietà di può fare attraverso alla pseudoclasse "root" che identifica l'elemento root del browser */
+
+h1{font-size: 48px;}
+h2{font-size: 40px;}
+h3{font-size: 33px;}
+h4{font-size: 28px;}
+h5{font-size: 23px;}
+h6{font-size: 19px;}
+p{font-size: 16px;}
+
+.main-header{
+    background-color: #7ae4ffff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo img {
+    height: 36px;
+}
+
+#menu-desk ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+#menu-desk ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all  ease-in-out .5s;
+}
+
+#menu-desk ul li a:hover{
+    color: #068f6e;
+}
+
+#ham{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.bar1{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bar2{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.bar3{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#hero{
+    background-image: url('../img/big-hero-section.jpg');
+    background-color: lightgrey;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background:url('../img/big-hero-section.jpg') lightgrey 50% / cover no-repeat; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#banner-hero{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255,255,255, 0.5);
+    padding: 20px;
+    border: 1px solid white;
+    backdrop-filter: blur(4px);
+}
+
+#banner-hero hr{
+    border: 0.5px solid white;
+    height: 0.5px;
+    margin-top: 10px;
+}
+
+#banner-hero h1{
+    color:white;
+}
+
+.hero-col button{
+    background-color: #0ADFAC;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    gap: 40%;
+    font-family: "Inter", sans-serif;
+}
+
+.hero-col button:hover{
+    background-color: #068f6e;
+}
+
+.primary-color{
+    color: #068f6e;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.hero-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-content: center;
+}
+
+.bgGray{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 30px;
+    gap: 15px;
+    flex-basis: 100%;
+}
+
+.bgGray h5, p{
+    color: black;
+}
+
+.bgPrimary{
+    background-color: #0ADFAC;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-color{
+    color: #068f6e;
+    font-size: 20px;
+}
+
+.bgPrimary h2{
+    color: black;
+}
+
+.bgImage{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    flex-basis: 120%;
+}
+
+.Bg-text{
+    background-image: url('../img/Bg-image.jpg');
+    padding: 50px;
+    height: 600%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: 0px -30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#deals{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 14px;
+}
+
+#bgButton{
+    background-color: #0ADFAC;
+    border: none;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+#bgButton:hover{
+    background-color:  #068f6e;
+}
+
+#bgButton span{
+    font-weight: 100;
+}
+
+@media screen and (max-width:375px) { 
+    #menu-desk{
+        display: none;
+     }
+
+     #ham{
+        display: block;
+     }
+
+   h1{font-size: 23.61px;}
+   h2{font-size: 22.13px;}
+   h3{font-size: 20.74px;}
+   h4{font-size: 19.44px;}
+   h5{font-size: 18.22px;}
+   h6{font-size: 17.07px;}
+   p{font-size: 16px;}
+
+   #banner-hero{
+    width: 100%;
+    height: auto;
+ }
+
+ .hero-col button{
+    width: 60%;
+    font-size: 13px;
+    gap: 30%;
+ }
+
+ #banner-hero{
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(4px);
+    border: 1px solid black;
+}
+
+#deals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px;
+}
+
+.bgPrimary{
+    padding: 50px;
+}
+
+.Bg-text{
+    padding: 60px;
+}
+
+ }
+
+/*mediaquery impostata da 320px a 1400px ovvero dal più piccolo al piu grande */
+
+ @media screen and (min-width: 320px) { 
+    #menu-desk{
+        display: none;
+     }
+
+     #ham{
+        display: block;
+     }
+
+     #deals{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    #banner-hero{
+        width: 100%;
+        height: auto;
+    }
+
+    #banner-hero h1{
+        font-size: 40px;
+    }
+
+    .hero-col button{
+        width: 200px;
+        padding: 10px;
+        gap: 30%;
+        font-size: 17px;
+    }
+
+ }
+
+@media screen and (min-width: 576px) { 
+    #menu-desk{
+        display: none;
+     }
+
+     #ham{
+        display: block;
+     }
+
+     #deals{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    #banner-hero{
+        width: 90%;
+        height: auto;
+    }
+
+    .hero-col button{
+        width: 200px;
+        padding: 10px;
+        gap: 30%;
+        font-size: 17px;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+@media screen and (min-width: 768px) { 
+    #menu-desk{
+        display: block;
+     }
+
+     #ham{
+        display: none;
+     }
+
+     #deals{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    #banner-hero{
+        width: 80%;
+        height: auto;
+    }
+
+    .hero-col button{
+        width: 200px;
+        padding: 10px;
+        gap: auto;
+        font-size: 17px;
+    }
+   
+    #hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+@media screen and (min-width: 992px) { 
+    #menu-desk{
+        display: block;
+     }
+
+     #ham{
+        display: none;
+     }
+
+     #deals{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    #banner-hero{
+        width: 56%;
+        height: auto;
+    }
+
+    .hero-col button{
+        width: 200px;
+        padding: 10px;
+        gap: auto;
+        font-size: 17px;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+@media screen and (min-width: 1200px) {
+    #menu-desk{
+        display: block;
+     }
+
+     #ham{
+        display: none;
+     }
+     #deals{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    #banner-hero{
+        width: 50%;
+        height: auto;
+    }
+
+    .hero-col button{
+        width: 200px;
+        padding: 10px;
+        gap: auto;
+        font-size: 17px;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+    }
+ }
+
+@media screen and (min-width: 1400px) { 
+    #menu-desk{
+        display: block;
+     }
+
+     #ham{
+        display: none;
+     }
+
+     #deals{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    #banner-hero{
+        width: 50%;
+    }
+
+    .hero-col button{
+        width: 200px;
+        padding: 10px;
+        gap: auto;
+        font-size: 17px;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+    }
+}
+
+/* backdrop-filter:blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+sepia()
+saturate() */
+
+/*La backdrop-filter è una proprietà che viene utilizzata per applicare un effetto grafico all'area dietro un elemento. */

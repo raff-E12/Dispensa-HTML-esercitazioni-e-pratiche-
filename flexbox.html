@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="UTF-8">
+        <meta name="author" content="Raffy U.">
+        <meta name="description" content="sito generico">
+        <meta name="keywords" content="html, css, sass">
+        <title> Guida Html e Css Javascript - Flexbox</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="Frame1.svg">
+        <link rel="manifest" href="dispensa 3/site.webmanifest">
+        <link rel="mask-icon" href="Frame1.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="Frame1.svg">
+        <meta name="msapplication-TileColor" content="#0100ff">
+        <meta name="msapplication-TileImage" content="frame1.svg">
+        <meta name="msapplication-config" content="dispensa 3/browserconfig.xml">
+        <meta name="theme-color" content="#3630af">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <header> 
+            <h1>Guida HTML, CSS e Javascript,<br> Introduzione allo studio dei linguaggi.</h1>
+        <nav> 
+            <ul>
+                <li> <a href="index.html" title="Homepage della guida HTML,CSS e Javascript"> Home</a></li>
+                <li> <a href="testi.html" title="i testi nel sito web"> Testi</a></li>
+                <li><a href="immagini.html" title="immagini del sito"> immagini</a></li>
+                <li><a href="link.html" title="link per i siti"> Link</a></li>
+                <li><a href="Iframes.html" title="iframe per i siti">Iframe</a></li>
+                <li><a href="Foglidistile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li><a href="box-model.html" title="Box Model">Box Model</a></li>
+                <li><a href="block-inline.html" title="Box Model">Block-inline</a></li>
+                <li><a href="position.html" title="Position">Position</a></li>
+                <li><a href="floating.html" title="Floating">Floating</a></li>
+                <li><a href="flexbox.html" title="Flexbox" id="linkAttivo">Flexbox</a></li>
+                <li><a href="transform-transition.html" title="Transform e Transition">Transform - Transition</a></li>
+                <li><a href="form.html" title="Form">Form</a></li>
+                <li><a href="dispensa-gol03/index.html" title="Dispensa">Dispensa Gol</a></li>
+                <li><a href="Esercizio-laylout.html" title="Layout">Esercizio Layout</a></li>
+                <li><a href="Boot-Strap lezioni/index.html" title="Boot-Strap">Bootstrap Accademy</a></li>
+                <li><a href="travel-company/index.html" title="Esercizio-figma">Travel Company (Progetto)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Flexbox e i contenitori flessibili</h2>
+            <p>Flexbox &grave; un nuovo modo di creare layout &quot;flessibili&quot;, grazie alle nuove propriet&agrave; css che permettono di allineare, distribuire e gestire elementi e spazi tra questi ultimi. Inoltre ci permette di gestire tutto questo da un singolo elemento contenitore. <br> Per rendere un contenitore flessibile bisogna dichiarare la propriet&agrave; display ed impostarla sul valore <strong>flex</strong></p>
+            <h3>Le propriet&agrave; css da usare</h3>
+            <h4>display:flex</h4>
+            <p>La prima propriet&agrave; da dichiarare &egrave; <span class="codice">display:flex.</span> Va dichiarata sul contenitore. Di default, dopo aver impostato la propriet&agrave; display:flex, automaticamente gli elementi all'interno di questo contenitore si dispongono in riga.</p>
+            <h4>flex-direction</h4>
+            <p><span class="codice">Flex direction: row | row-reverse | column | column-reverse</span>, stabilisce l'asse principale e definisce la direzione in cui gli elementi flessibili vengono posizionati nel contenitore. Quindi gli elementi possono essere disposti in riga o in colonna. Reverse, indica l'ordine degli elementi (partendo dall'ultimo verso il primo).</p>
+            <h4>flex-wrap</h4>
+            <p>Con la propriet&agrave; <span class="codice">flex-wrap:nowrap | wrap | wrap-reverse</span> possiamo dire agli elementi presenti in un contenitore flex di consentire o meno il ritorno a capo. Di default questa propriet&agrave; &egrave; impostata su <span class="codice">nowrap</span>, quindi gli elementi cercano di adattarsi su una singola riga, non tenendo conto della larghezza(se impostata) degli elementi nel contenitore flessibile.</p>
+            <h4>justify-content</h4>
+            <p>Questa propriet&agrave; ci permette di allineare gli elementi sull'asse principale, permettendoci di distribuire lo spazio presente sull'asse. <span class="codice">justify-content: flex-start(o start, valore di default) | flex-end(o end) | center | space-between | space-around | space-evenly.</span></p>
+            <h4>align-items</h4>
+            <p>Con la propriet&agrave; <span class="codice">align-items: flex-start | flex-end | center | stretch | baseline</span> possiamo allineare gli elementi sull'asse secondario, ossia quello perpendicolare al principale.</p>
+        </section>
+        <section>
+            <h2>Esempi</h2>
+            <p>Se volete visionare l'esempio fatto qui, cliccati al link <a href="es_flexbox.html">Esempio flexbox</a></p>
+        </section>
+    </main>  
+     <footer><!-- inizio piedipagina-->
+            <p> &copy; Copyright by Raffaele Coppola</p>
+     </footer> 
+    </body>
+</html>

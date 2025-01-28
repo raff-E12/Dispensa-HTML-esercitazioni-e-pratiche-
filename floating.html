@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="UTF-8">
+        <meta name="author" content="Raffy U.">
+        <meta name="description" content="sito generico">
+        <meta name="keywords" content="html, css, sass">
+        <title> Guida Html e Css Javascript - Floating</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="Frame1.svg">
+        <link rel="manifest" href="dispensa 3/site.webmanifest">
+        <link rel="mask-icon" href="Frame1.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="Frame1.svg">
+        <meta name="msapplication-TileColor" content="#0100ff">
+        <meta name="msapplication-TileImage" content="frame1.svg">
+        <meta name="msapplication-config" content="dispensa 3/browserconfig.xml">
+        <meta name="theme-color" content="#3630af">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <header> 
+            <h1>Guida HTML, CSS e Javascript,<br> Introduzione allo studio dei linguaggi.</h1>
+        <nav> 
+            <ul>
+                <li> <a href="index.html" title="Homepage della guida HTML,CSS e Javascript"> Home</a></li>
+                <li> <a href="testi.html" title="i testi nel sito web"> Testi</a></li>
+                <li><a href="immagini.html" title="immagini del sito"> immagini</a></li>
+                <li><a href="link.html" title="link per i siti"> Link</a></li>
+                <li><a href="Iframes.html" title="iframe per i siti">Iframe</a></li>
+                <li><a href="Foglidistile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li><a href="box-model.html" title="Box Model">Box Model</a></li>
+                <li><a href="block-inline.html" title="Box Model">Block-inline</a></li>
+                <li><a href="position.html" title="Position">Position</a></li>
+                <li><a href="floating.html" title="Floating" id="linkAttivo">Floating</a></li>
+                <li><a href="flexbox.html" title="Flexbox">Flexbox</a></li>
+                <li><a href="transform-transition.html" title="Transform e Transition">Transform - Transition</a></li>
+                <li><a href="form.html" title="Form">Form</a></li>
+                <li><a href="dispensa-gol03/index.html" title="Dispensa">Dispensa Gol</a></li>
+                <li><a href="Esercizio-laylout.html" title="Layout">Esercizio Layout</a></li>
+                <li><a href="Boot-Strap lezioni/index.html" title="Boot-Strap">Bootstrap Accademy</a></li>
+                <li><a href="travel-company/index.html" title="Esercizio-figma">Travel Company (Progetto)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+			<h2>La fluttuazione degli elementi</h2>
+			<div>
+				<h3>La propriet&aacute; Float</h3>
+				<p>La propriet&aacute; <strong>float</strong> viene usata per far galleggiare alcuni elementi per costruire dei layout pi&uacute; complessi, dove per esempio si utilizza una griglia basata su un sistema di righe e colonne. Con questa propriet&aacute; rimuoviamo un elemento dal normale flusso del documento e lo spostiamo sui lati (destra o sinistra) ed affiancarlo ad altri elementi.<br>
+				Float assume i seguenti valori:</p>
+				<ul>
+					<li>left - gli elementi si affiancano a sinistra;</li>
+					<li>right - gli elementi si affiancano a destra;</li>
+					<li>none - gli elementi non si affiancano, valore di default.</li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3>Pulizia della fluttuazione</h3>
+				<p>Dopo gli elementi affiancati(fluttuanti), se bisogna riprendere il normale flusso del documento, bisogna &quot;pulire&quot; la fluttuazione. Una pratica comunemente adottata dai web designer &eacute; quella di dichiarare, dopo gli elementi fluttuanti, un elemento con una classe che avr&aacute; le seguenti propriet&aacute;:</p>
+				<p class="codice">.clear-float{clear:both;float:none;}</p>
+				<p>inoltre potreste trovare nella stessa classe anche:</p>
+				<p class="codice">line-height:0; font-size:0; height:0; padding:0; margin:0;</p>
+				<p>serve per evitare che la classe clear-float abbia una dimensione e sia visibile nel documento.</p>
+			</div>
+            <p>Per vedere gli esempi fatti potete nel file <a href="es-float.html">Es-Float.</a></p>
+		</section>
+    </main>  
+     <footer><!-- inizio piedipagina-->
+            <p> &copy; Copyright by Raffaele Coppola</p>
+     </footer> 
+    </body>
+</html>

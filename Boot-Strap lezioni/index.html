@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Academy</title>
+    <meta name="description" content="Ba academy, bootstrap academy">
+    <meta name="keywords" content="bootstarp, academy, education"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ae5bd5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#3e4bff">
+    <script src="https://kit.fontawesome.com/e5c56a9a16.js" crossorigin="anonymous"></script>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar-academy">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-bootstrap display-6" id="links"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-3">
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="links"><i class="fa-solid fa-house"></i> Home</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="links">
+                      <i class="fa-solid fa-graduation-cap" ></i> Corsi
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Web design</a></li>
+                      <li><a class="dropdown-item" href="#">Graphic design</a></li>
+                      <li><a class="dropdown-item" href="#">Fotografia</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Tutti i corsi</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="links"><i class="fa-solid fa-circle-play"></i> Tutorial</a>
+                  </li>
+    
+                  <li class="nav-item position-relative">
+                    <span class="position-absolute d-none d-lg-block badge rounded-pill bg-info" style="right: -12px; top:-7px">
+                        new
+                    </span>
+                    <span class="position-absolute d-lg-none badge rounded-pill bg-info" style="left: 55px; top:-7px">
+                      new
+                    </span>
+                    <a class="nav-link active" aria-current="page" href="#" id="links"><i class="fa-solid fa-book-open"></i> Guide </a>
+                  </li>
+    
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+</header>
+    <main>
+        <section class="container-fluid" id="hero-ba">
+          <div class="container">
+            <div class="row vh-100 align-items-center">
+              <div class="col-lg-6">
+                <h1 class="text-light">Diventa Full Stack Developer</h1>
+                <img src="img/computer java.png" alt="logo-1">
+              </div>
+              <div class="col-lg-4 offset-lg-2">
+                <div class="card text-bg-dark">
+                  <div class="card-title">
+                    <h4 class="card-title text-info p-2">Area riservata</h4>
+                  </div>
+                   <div class="card-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Resta Connesso</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                   </div>         
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            <section class="container p-5">
+              <div class="row">
+                <div class="col">
+                  <h2 class="display-3 fw-bold text-info text-center mb-4">L'accademia</h2>
+                </div>
+              </div>
+              <div class="row">
+                <article class="col-md-6">
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/accademy1.jpeg" class="d-block w-100" alt="image1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/accademy2.jpeg" class="d-block w-100" alt="image2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/accademy3.jpeg" class="d-block w-100" alt="image3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </article>
+                <article class="col-md-6">
+                  <h3 class="fs-2 fw-bold text-info mb-3">Dal Design al codice</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati esse, neque quae veritatis
+                     error nemo laboriosam ex molestiae quaerat 
+                     quam earum qui sequi voluptas cupiditate ut. Officia, ratione! Iure, repellat!</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati esse, neque quae veritatis
+                      error nemo laboriosam ex molestiae quaerat 
+                      quam earum qui sequi voluptas cupiditate ut. Officia, ratione! Iure, repellat!</p>
+                      <button class="btn btn-info text-white">Scopri di più <i class="fa-solid fa-chevron-right"></i></button>
+                </article>
+              </div>
+            </section>
+            <section class="container p-5">
+              <div class="row">
+                <div class="col text-center">
+                  <h2 class="display-3 fw-bold text-info">I corsi</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati esse, neque quae veritatis!!</p>
+                </div>
+              </div>
+              <div class="row">
+                <div  class="col">
+                  <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active text-info fw-bold fs-4" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Graphic Design</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link text-info fw-bold fs-4" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Web Design</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link text-info fw-bold fs-4" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Fotografia</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="container p-0">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img src="img/accademy2.jpeg" class="w-100" alt="accademia bellissima">
+                  </div>
+                  <div class="col-lg-6">
+                    <h3 class="text-info fw-bold fs-3">Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus ullam quasi, culpa repellat quia a animi error asperiores enim. Possimus dolorem libero veniam culpa sunt ipsam eum recusandae molestiae.</p>
+                    <button class="btn btn-outline-info">Scopri di più sul corso <i class="fa-solid fa-caret-right"></i></button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="accordion mt-5" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Programma del corso
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Docenti del corso
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col">
+                                    <h4 class="text-info fw-bold fs-4">Docenti del corso di Graphic Designer</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi pariatur repellat repudiandae totam accusantium autem numquam.</p>
+                                  </div>
+                                </div>
+                                <div class="row row-gap-3">
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="img/bob.jpeg" class="img-fluid" alt="bob">
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="img/bob.jpeg" class="img-fluid" alt="bob">
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="img/bob.jpeg" class="img-fluid" alt="bob">
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="img/bob.jpeg" class="img-fluid" alt="bob">
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="img/bob.jpeg" class="img-fluid" alt="bob">
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="img/bob.jpeg" class="img-fluid" alt="bob">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Attestati &amp; Riconoscimenti
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                      <div class="container p-0">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <img src="img/accademy1.jpeg" class="w-100" alt="accademia bellissima">
+                          </div>
+                          <div class="col-lg-6">
+                            <h3 class="text-info fw-bold fs-3">Web Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus ullam quasi, culpa repellat quia a animi error asperiores enim. Possimus dolorem libero veniam culpa sunt ipsam eum recusandae molestiae.</p>
+                            <button class="btn btn-outline-info">Scopri di più sul corso <i class="fa-solid fa-caret-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="accordion mt-5" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Programma del corso
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Docenti del corso
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Attestati &amp; Riconoscimenti
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                      <div class="container p-0">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <img src="img/accademy1.jpeg" class="w-100" alt="accademia bellissima">
+                          </div>
+                          <div class="col-lg-6">
+                            <h3 class="text-info fw-bold fs-3">Web Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ducimus ullam quasi, culpa repellat quia a animi error asperiores enim. Possimus dolorem libero veniam culpa sunt ipsam eum recusandae molestiae.</p>
+                            <button class="btn btn-outline-info">Scopri di più sul corso <i class="fa-solid fa-caret-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="accordion mt-5" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Programma del corso
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Docenti del corso
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Attestati &amp; Riconoscimenti
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      </main>
+      <footer class="container-fluid mt-5 text-white p-5" id="sideFooter">
+        <div class="row">
+          <!-- Start prima colonna -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h2 class="text-info">L'accademia</h2>
+            <p><img src="img/ba-favicon.png" width="60" alt="logo bootstrap academy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sapiente distinctio laborum consequatur.</p>
+          </div>
+          <!-- End prima colonna -->
+          <!-- Start Seconda colonna -->
+          <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0">
+            <h2 class="text-info">Legal</h2>
+              <ul class="list-group list-group-flush list-groupBA">
+                <li class="list-group-item " id="list-groupA"><a href="#">Termini e condizioni</a></li>
+                <li class="list-group-item " id="list-groupA"><a href="#">Privacy Policy</a></li>
+                <li class="list-group-item " id="list-groupA"><a href="#">Cookie Policy</a></li>
+              </ul>
+          </div>
+          <!-- End Seconda colonna -->
+    
+          <!-- Start terza colonna -->
+          <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+            <h2 class="text-info">Naviga nel sito</h2>
+            <ul class="list-group list-group-flush list-groupBA">
+              <li class="list-group-item " id="list-groupA"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li class="list-group-item " id="list-groupA"><a href="#"><i class="fa-solid fa-graduation-cap"></i> Corsi</a></li>
+              <li class="list-group-item " id="list-groupA"><a href="#"><i class="fa-solid fa-circle-play"></i> Tutorial</a></li>
+              <li class="list-group-item " id="list-groupA"><a href="#"><i class="fa-solid fa-book-open"></i> Guide</a></li>
+            </ul>
+            
+          </div>
+          <!-- End terza colonna -->
+    
+          <!-- Start Quarta colonna -->
+          <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+            <h2 class="text-info">Contattaci</h2>
+            <form action="#" enctype="text/plain" method="post">
+              <div class="mb-3">
+                <label for="userName" class="form-label">Inserisci Inserisci il tuo nome</label>
+                <input type="text" class="form-control" id="userName" aria-describedby="user name" required>
+    
+                <label for="userEmail" class="form-label">Inserisci la tua e-mail</label>
+                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" required>
+                
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Scrivi il tuo messaggio</label>
+                <textarea class="form-control" id="message" required></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="acceptance">
+                <label class="form-check-label" for="acceptance">Ho letto ed accettato il <a href="#">trattamento dei miei dati personali</a> secondo la legge n.123 del 1968.</label>
+              </div>
+              <button type="submit" class="btn btn-info">Invia messaggio</button>
+            </form>
+          </div>
+          <!-- End Quarta colonna -->
+        </div>
+      </footer>
+    
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

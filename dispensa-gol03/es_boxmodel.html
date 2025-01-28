@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        ul,ol{
+            padding-left:25px;
+        }
+        #box1{
+            width:300px;
+            height:300px;
+            padding:10px;
+            border:4px solid goldenrod;
+            margin-top:20px;
+            margin-left:20px;
+            background-color: brown;
+            color: white;
+            box-sizing: border-box;
+        }
+        #box2{
+            width:300px;
+            height:300px;
+            padding:10px;
+            border:4px solid goldenrod;
+            margin-top:20px;
+            margin-left:20px;
+            background-color:blue;
+            color: white;
+            box-sizing: content-box;/*valore di default impostato dal browser*/
+        }
+        h1{font-size: 61px; margin:14px 0;}
+        h2{font-size: 49px; margin:13px 0;}
+        h3{font-size: 39px; margin:12px 0;}
+        h4{font-size: 31px; margin:10px 0;}
+        h5{font-size: 25px; margin:8px 0;}
+        h6{font-size: 20px; margin:8px 0;}
+        p{font-size: 16px; margin:8px 0;}
+    </style>
+</head>
+<body>
+
+    <h1>Titolo h1</h1>
+    <h2>Titolo h2</h2>
+    <h3>Titolo h3</h3>
+    <h4>Titolo h4</h4>
+    <h5>Titolo h5</h5>
+    <h6>Titolo h6</h6>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis sequi cupiditate maiores exercitationem numquam aliquam odit ex, cumque repellat eligendi adipisci tempora officiis nisi. Blanditiis id neque molestiae. Minima, aut.</p>
+
+    <ul>
+        <li>Lunedì</li>
+        <li>Martedì</li>
+        <li>Mercoledì</li>
+        <li>Giovedì</li>
+        <li>Venerdì</li>
+        <li>Sabato</li>
+        <li>Domenica</li>
+    </ul>
+
+    <div id="box1">
+        <p>box1 - con propriet&agrave; <strong>box-sizing</strong> impostata su border-box <br><br>width - padding(left/right)-border(left/right)
+            <br><br>
+    height-padding(top/bottom)-border(top/bottom)
+        </p>
+    </div>
+
+    <div id="box2">
+        <p>box2 - con propriet&agrave; <strong>box-sizing</strong> impostata su content-box (valore di default) <br><br> 
+        width+padding(left/right)+border(left/right) <br><br>
+    height+padding(top/bottom)+border(top/bottom)</p>
+    </div>
+
+</body>
+</html>

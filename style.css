@@ -1,0 +1,385 @@
+
+/*selettore universale 
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(247, 245, 125);
+}
+
+/*selettori multipli */
+
+header, main, footer{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(163, 163, 163);
+    padding:10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    text-align: left;
+}
+
+/*selettore singolo universale */
+
+header{
+    border-top: 2px solid rgb(0, 0, 0);
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px ;
+    background-color: #1d3557;
+    color: white;
+}
+
+footer{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(97, 97, 97);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+main{
+    font-size: 20px
+}
+
+/*selettori ereditari */
+
+header nav{
+    padding: 5px 0px;
+    border-top: 1px solid rgba(29, 53, 87, 0.5);
+    border-bottom: 1px solid rgba(29, 53, 87, 0.5);
+}
+
+header nav ul{
+    list-style-type: none; /*serve ad eliminare o cambiare il simbolo al fianco al fianco dei punti in vista */
+    padding: 0 9px;
+    margin: 0;
+    text-align: left;
+}
+
+/*boder-style: dotted-solid-dashed-double-groove-ridge-inset-outset-none*/
+
+header nav ul li a{
+    color: #1d3557;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+#linkAttivo{
+    font-weight: 700;
+    color: #6521a5;
+    text-decoration: underline;
+}
+
+/*misurazioni dei titoli in base al responsive del sito in questione calcolate */
+
+h1{ 
+    font-size: 50px;
+    margin: 14px 0;
+}
+
+h2{ 
+    font-size: 39px;
+    padding-left: 10px;
+    border-left: 3px solid blue;
+    margin: 13px 0;
+}
+
+h3{ 
+    font-size: 39px;
+    font-weight: 900;
+    padding-left: 10px;
+    margin: 12px 0;
+    border-left: 3px solid blue;
+}
+
+h4{ 
+    font-size: 27px;
+    margin:8px 0;
+}
+
+h5{ 
+    font-size: 23px;
+    margin: 8px 0;
+}
+
+h6{ 
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+
+pre {
+    font-size: 16px;
+}
+
+nav{
+    background-color: rgb(163, 163, 163);
+}
+
+nav ul{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+a:hover{
+    color: #456591;
+}
+
+
+/*creazione di un regola tramite selettore di tipo id */
+
+#esempiold{
+    text-transform: uppercase;
+    color: darkgoldenrod;
+    font-size: large;
+}
+
+.testorosso{
+    color: red;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Stili della tabella */
+
+.tableDispensa{
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+.tableDispensa caption{
+    background-color: #1d3557;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.tableDispensa caption:hover{
+    background-color: #4871aa;
+}
+
+.tableDispensa thead tr th, .tableDispensa tbody tr th{
+    background-color: #456591;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.tableDispensa tbody tr td{
+    background-color: azure;
+    border: 2px solid #d3d3d399;
+    text-align: right;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.tableDispensa tfoot {
+    background-color: #1d3557;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px; 
+    text-align: center;
+}
+
+.tableDispensa tfoot tr th{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    #menu-desk ul{
+        display: none;
+     }
+ 
+     .menu-ham{
+         display: flex;
+         flex-direction: row;
+         gap: 80%;
+         align-items: center;
+         justify-content: center;
+         padding: 2px;
+     }
+ 
+     .hamburger{
+         display: flex;
+         width: 5%;
+         height: auto;
+         flex-direction: column;
+         gap: 10px;
+     }
+ 
+     .line-1{
+         width: 100%;
+         height: 5px;
+         background-color: white;
+     }
+ 
+     .line-2{
+         width: 100%;
+         height: 5px;
+         background-color: white;
+     }
+     
+ 
+     .line-3{
+         width: 100%;
+         height: 5px;
+         background-color: white;
+     }
+ 
+ 
+     .menu-ham a{
+         display: block;
+         font-size: 26px;
+         color: white;
+         text-decoration: none;
+      }
+}
+
+@media screen and (min-width: 992px) {
+    h1{ 
+        font-size: 32.44px;
+    }
+    
+    h2{ 
+        font-size: 28.83px;
+    }
+    
+    h3{ 
+        font-size: 25.63px;
+    }
+    
+    h4 { 
+        font-size: 22.78px;
+    }
+    
+    h5{ 
+        font-size: 20.25px;
+    }
+    
+    h6{ 
+        font-size: 18px;
+    }
+
+    main, header, footer {
+        width: 90%;
+    }
+
+    #menu-desk ul{
+       display: none;
+    }
+
+    .menu-ham{
+        display: flex;
+        flex-direction: row;
+        gap: 80%;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+    }
+
+    .hamburger{
+        display: flex;
+        width: 5%;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .line-1{
+        width: 100%;
+        height: 8px;
+        background-color: white;
+    }
+
+    .line-2{
+        width: 100%;
+        height: 8px;
+        background-color: white;
+    }
+    
+
+    .line-3{
+        width: 100%;
+        height: 8px;
+        background-color: white;
+    }
+
+
+    .menu-ham a{
+        display: block;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+    main, header, footer {
+        width: 80%;
+    }
+
+    #menu-desk ul{
+        display: flex;
+     }
+
+     .hamburger{
+        display: none;
+     }
+
+     .menu-ham a{
+        display: none;
+     }
+
+     .menu-ham{
+        display: none;
+     }
+}
+
+@media screen and (min-width: 1440px) {
+    main, header, footer {
+        width: 70%;
+    }
+
+    #menu-desk ul{
+        display: flex;
+     }
+
+     .hamburger{
+        display: none;
+     }
+
+     .menu-ham a{
+        display: none;
+     }
+     s
+     .menu-ham{
+        display: none;
+     }
+}
+
+

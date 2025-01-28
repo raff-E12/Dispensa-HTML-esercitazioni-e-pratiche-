@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Position</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        /*
+        font-family: "Ubuntu", sans-serif;
+        font-family: "Poppins", sans-serif;
+        */
+        body{
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .schedaProdotto{
+            width: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+            padding:10px;
+            background-color:#efefef;
+            border:1px solid rgba(15, 100, 157, 0.8);
+            border-radius: 8px;
+            position:relative;
+            box-shadow: 1px 1px 3px 0px rgba(15, 100, 157, 0.2);
+            z-index: 3; /*indichiamo uno z-index minore dell'elemento sticky per mostrarlo al di sotto di quest'ultimo*/
+            transition: box-shadow .3s ease-in-out;
+           
+        }
+        .schedaProdotto:hover{
+            box-shadow: 1px 1px 3px 0px rgba(15, 100, 157, 0.5);
+        }
+        .schedaProdotto h3{
+            font-size: 24px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 600;
+            color:rgba(15, 100, 157, 0.8);
+        }
+        .descrizioneProdotto{
+            font-size: 14px;
+            color:#333;
+            margin-top: 10px;
+            text-align: justify;
+        }
+        .schedaProdotto img{
+            border-radius: 8px;
+        }
+        .prezzo{
+            font-weight: 600;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 16px;
+            color:rgba(15, 100, 157, 1);
+            text-align: right;
+        }
+        .saldi{
+            background-color: rgb(134, 0, 0);
+            color: white;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding:4px;
+            position: absolute;
+            top:15px;
+            right:-10px;
+            transition: all .2s ease-in-out;
+        }
+        .schedaProdotto:hover .saldi{
+            box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+            background-color: rgb(240, 0, 0);
+            right: -20px;
+        }
+        .wishlist{
+            width: 40px;
+            height:40px;
+            padding:4px;
+            background-color: white;
+            position: absolute;
+            top:126px;
+            left: 10px;
+            opacity:0;
+            transition: opacity .2s ease-in-out;
+        }
+        .schedaProdotto:hover .wishlist{
+            opacity:1;
+        }
+        .chatSupporto{
+            background-color: rgb(0, 159, 0);
+            height:40px;
+            padding:0 5px;
+            color: white;
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 500;
+            font-family: "Ubuntu", sans-serif;
+            position: fixed;
+            bottom:20px;
+            right: 20px;
+        }
+        .sticky{
+            background-color: darkcyan;
+            padding:3px;
+            color:white;
+            position: sticky;
+            top:20px;
+            margin-top: 50px;
+            z-index: 4; /* indichiamo uno z-index più alto per sovrapporre l'elemento a scheda prodotto, che nel markup viene dopo e quindi verrebbe mostrato al di sopra di sticky*/
+        }
+        .boxConOmbra{
+            width:200px;
+            background-color: #efefef;
+            border:1px solid rgba(0, 139, 139, 0.4);
+            padding:5px;
+            margin-top: 100px;
+            margin-left: 50px;
+            border-radius:10px;
+            box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+            /*
+            transition-property: box-shadow;
+            transition-duration: .6s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+            transition-property: border-color;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; 
+            */
+            transition: box-shadow .3s ease-in-out, border-color 2s ease-in-out;
+
+        }
+        .boxConOmbra:hover{
+            box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+            border:1px solid rgba(0, 139, 139, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky">
+        Sono un elemento in position sticky
+    </div>
+
+    <div class="schedaProdotto">
+        <img src="img/apple-watch-8.jpg" width="100%" alt="Apple watch serie 8">
+        <h3>Apple watch - Serie 8</h3>
+        <p class="descrizioneProdotto">Apple Watch S8, Cassa 45mm in alluminio, black midnight con GPS mod3.</p>
+        <p class="prezzo">€ 349,00</p>
+        <span class="saldi">In Saldo</span>
+        <div class="wishlist">
+            <img src="img/icona-cuore.png" alt="icona cuore">
+        </div>
+    </div>
+
+    <div class="boxConOmbra">
+        <img src="img/apple-watch-8.jpg" width="100%" alt="Apple watch serie 8">
+        <h3>Apple watch - Serie 8</h3>
+    </div>
+    <div class="chatSupporto">
+        <p>Chatta con noi</p>
+    </div>
+
+
+    <section style="padding-top:100px; padding-bottom:1000px;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis, nihil natus eum pariatur culpa aperiam iste itaque totam impedit! Accusamus, eius quod. Debitis iste iure non accusantium a reprehenderit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis, nihil natus eum pariatur culpa aperiam iste itaque totam impedit! Accusamus, eius quod. Debitis iste iure non accusantium a reprehenderit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis, nihil natus eum pariatur culpa aperiam iste itaque totam impedit! Accusamus, eius quod. Debitis iste iure non accusantium a reprehenderit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis, nihil natus eum pariatur culpa aperiam iste itaque totam impedit! Accusamus, eius quod. Debitis iste iure non accusantium a reprehenderit.</p>
+
+    </section>
+
+
+
+</body>
+</html>

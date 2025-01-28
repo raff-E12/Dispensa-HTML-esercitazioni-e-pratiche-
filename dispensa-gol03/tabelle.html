@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - Le tabelle</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br>  Le tabelle</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Flexbox</a></li>
+                <div class="clearfix"></div>
+               
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>Le tabelle o dati tabulari</h2>
+            <p>Una tabella &egrave; una collezione di dati che si ottengono incrociando righe e colonne. Viene utilizzata a supporto del testo. <br>
+            Il tag che viene utilizzato per rappresentare una tabella &egrave; il tag <strong>&lt;table&gt;</strong>.</p>
+            <table width="300" border="1">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </table>
+
+            <table width="100%" border="1">
+                <caption>
+                    Caption o intestazione della tabella
+                </caption>
+                <thead>
+                    <tr>
+                        <td>Mese</td>
+                        <td>Descrizione</td>
+                        <td>Entrate</td>
+                        <td>Uscite</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gennaio</td>
+                        <td>Meccanico</td>
+                        <td>-</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Febbraio</td>
+                        <td>Risparmi</td>
+                        <td>150</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Marzo</td>
+                        <td>Risparmi/bollette</td>
+                        <td>200</td>
+                        <td>120</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Primo Trimestre</td>
+                        <td>totale</td>
+                        <td>350</td>
+                        <td>220</td>
+                       
+                    </tr>
+                </tfoot>
+            </table>
+
+            
+            
+            <table class="tableDispensa">
+                 <caption> <!-- intestazione della tabella -->
+                    Report Profitti Aziendali
+                </caption>
+                <thead>  <!-- parte superiore della tabella -->
+                    <tr>   <!-- Riga della tabella -->
+                         <th scope="col">Mese</th>  <!--  intestazione della singola colonna (<th scope='col'>) -->
+                        <th scope="col">Entrate</th>
+                        <th scope="col">Uscite</th>
+                        <th scope="col">Risultato</th>
+                    </tr>
+                </thead>
+                 <tbody>   <!-- corpo della tabella -->
+                    <tr>
+                        <th scope="row">Gennaio</th>
+                        <td>1500</td>
+                        <td>300</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Febbraio</th>
+                        <td>2000</td>
+                        <td>1100</td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Marzo</th>
+                        <td>600</td>
+                        <td>900</td>
+                        <td>-300</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Aprile</th>
+                        <td>1500</td>
+                        <td>200</td>
+                        <td>1300</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Maggio</th>
+                        <td>3000</td>
+                        <td>1100</td>
+                        <td>1900</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Giugno</th>
+                        <td>6000</td>
+                        <td>800</td>
+                        <td>5200</td>
+                    </tr>
+                </tbody>
+                 <tfoot> <!-- Footer o parte finale della tabella -->
+                    <tr>
+                        <td colspan="4">Report semestrale dei profitti aziendali</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+
+        </section>
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

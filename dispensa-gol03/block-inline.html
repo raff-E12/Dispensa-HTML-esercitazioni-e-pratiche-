@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - Block / Inline</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br>  Block / Inline</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Flexbox</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>Elementi di blocco ed elementi in linea</h2>
+            <h3>Elementi di blocco (block level)</h3>
+            <p>Gli elementi di blocco sono quelli che usano orizzontalmente tutto lo spazio a disposizione, per cui dopo ogni elemento di blocco il prossimo elemento va a capo forzatamente.</p>
+            <p>Esempi di elementi di blocco</p>
+            <h2>Titolo h2</h2>
+            <h3>Titolo h3</h3>
+            <p>paragrafo</p>
+            <hr>
+            <div>questo &egrave; un div</div>
+
+            <h3>Elementi in linea (inline level)</h3>
+            <p>Gli elementi in linea sono invece quelli che si inseriscono tra un elemento ed un altro, occupando il minimo spazio necessario, senza mandare a capo gli altri elementi successivi.</p>
+
+            <p>Esempi di elementi in linea</p>
+
+            <a href="https://www.google.it" title="link a google">Link a google</a>
+            <img src="img/immagine-ananas.jpg" width="300" alt="immagine di un'ananas con gli occhiali">
+            <span>Questo &egrave; un tag span</span>
+        </section>
+
+        <section>
+            <h2>La propriet&agrave; css Display</h2>
+            <p>Gli elementi di blocco hanno come valore di default della propriet&agrave; display:block mentre gli elementi in linea hanno come valore di default display:inline. Grazie a questa propriet&agrave; possiamo invertire il comportamento degli elementi di blocco/in linea, cambiando il valore di default. Esiste inoltre un altro valore da poter assegnare a display. Il valore &egrave; &quot;none&quot; che rimuove l'elemento dal viewport.</p>
+            
+            <div class="esempioContenitore">
+
+            </div>
+        </section>
+
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

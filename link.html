@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="UTF-8">
+        <meta name="author" content="Raffy U.">
+        <meta name="description" content="sito generico">
+        <meta name="keywords" content="html, css, sass">
+        <title> Guida Html e Css Javascript - i link</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="Frame1.svg">
+        <link rel="manifest" href="dispensa 3/site.webmanifest">
+        <link rel="mask-icon" href="Frame1.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="Frame1.svg">
+        <meta name="msapplication-TileColor" content="#0100ff">
+        <meta name="msapplication-TileImage" content="frame1.svg">
+        <meta name="msapplication-config" content="dispensa 3/browserconfig.xml">
+        <meta name="theme-color" content="#3630af">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <header> 
+            <h1>Guida HTML, CSS e Javascript,<br> Introduzione allo studio dei linguaggi.</h1>
+        <nav> 
+            <ul>
+                <li> <a href="index.html" title="Homepage della guida HTML,CSS e Javascript"> Home</a></li>
+                <li> <a href="testi.html" title="i testi nel sito web"> Testi</a></li>
+                <li><a href="immagini.html" title="immagini del sito"> immagini</a></li>
+                <li><a href="link.html" title="link per i siti" id="linkAttivo"> Link</a></li>
+                <li><a href="Iframes.html" title="iframe per i siti">Iframe</a></li>
+                <li><a href="Foglidistile.html" title="iframe per i siti">Fogli di stile</a></li>
+                <li><a href="box-model.html" title="Box Model">Box Model</a></li>
+                <li><a href="block-inline.html" title="Block e Inline">Block-Inline</a></li>
+                <li><a href="position.html" title="Position" >Position</a></li>
+                <li><a href="floating.html" title="Floating">Floating</a></li>
+                <li><a href="flexbox.html" title="Flexbox">Flexbox</a></li>
+                <li><a href="transform-transition.html" title="Transform e Transition">Transform - Transition</a></li>
+                <li><a href="form.html" title="Form">Form</a></li>
+                <li><a href="dispensa-gol03/index.html" title="Dispensa">Dispensa Gol</a></li>
+                <li><a href="Esercizio-laylout.html" title="Layout">Esercizio Layout</a></li>
+                <li><a href="Boot-Strap lezioni/index.html" title="Boot-Strap">Bootstrap Accademy</a></li>
+                <li><a href="travel-company/index.html" title="Esercizio-figma">Travel Company (Progetto)</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        <section>
+            <h2> L'url</h2>
+            <p> il cardine di un sistema internet &grave; che non esistono due risorse che abbiano lo stesso 
+                indirizzo. Un indirizzo &grave; il posto fisico in cui si trova una risorsa ( una cartella, 
+                un'immagine, una pagina web) Gli indirizzi web si chiamo URL (uniform resuorce locator.)
+            </p>
+        </section>
+        <section>
+            <h2> Schema di un Url</h2>
+            <p> un indirizzo pu&grave;presentarsi in tante forme tra cui:</p>
+            <ul>
+                <li>https://www.miodominio.est/path/risorsa.html</li>
+                <li>https://www.miodominio.est/path/immagine.est</li>
+                <li>https://www.sottodominio.miodominio.est/path/risorsa.html</li>
+            </ul>
+
+            <ul>
+                <h3> Parti di un Url</h3>
+                <li> https, http, ftp, ftps, rappresentano lo schema del collegamento, indicano il protocollo che richiamerrano
+                    ed il tipo di server che risponder&grave; alla richesta. "HTTPS" sta per Hyper Text Trasfer Protocol.
+                </li>
+                <li> www. - indica che ci troviamo all'interno del world wide web, pu&grave; o meno (dipende dalla configurazione del server) </li>
+                <li> 
+                    dominio - detto anche dominio di secondo livello (https://www.miodominio.est/path/risorsa.html)
+                </li>
+                <li> .est - indica il dominio di primo livello o anche detto estensione (https://www.miodominio.est/path/risorsa.est)</li>
+                <li> path - &grave; il percorso interno nel quale si trova la risorsa, generalmente una sottocartella (https://www.miodominio.est/path/risorsa.html)</li>
+                <li> risorsa.html - indica la pagina interna alla quale ci dirotter&grave; il browser (https://www.miodominio.est/path/risorsa.est) </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Attributi e vari tipi di collegamento</h2>
+            <p> Un link nell'html &grave; composto dal tag &lt;a href=&quot;URL&quot;&gt;testo del link&lt;/a&gt;. Questo gruppo pu&grave;raccogliere al suo interno alcuni attributi che estendono le sue proprit&agrave;</p>
+            <h3>Attributi</h3>
+            <p> href, title, target sono gli attributi da poter utilizzare all'interno del tag a, per descrivere al meglio il link.</p>
+            <ul>
+                <li> href - indirizzo di destinazione(URL)</li>
+                <li> title - spiega il senso del collegamento &grave; per descrivere il contenuto della risorsa ed aiuta in ottica seo e accessibilit&grave;</li>
+                <li> target - indica dove si aprir&grave; la risorsa dell'attributo href</li>
+            </ul>
+
+            <h3>Collegamenti relativi</h3>
+            <p>il collegamento relativo &grave; un tipo di link che punta ad un URL presente all'interno dell dominio. In questo caso nell'href viene identificato 
+                solo il nome della risorsa o della pagina verso la quale punta.</p>
+                <a href="index.html" target="_blank"> Home</a>
+                <p> Alri link:</p>
+                <a href="immagini.html" target="_self"> immagine</a><br>
+                <a href="testi.html" target="_top"> Testo</a>
+            <h3> Collegamenti assoluti </h3>
+            <p> il collegamento assoluti &grave; un tipo di link che punta ad un URL presente all'esterno del nostro dominio.
+                Nell'href deve necessariemente essere riportato tutto il collegamento per esteso completo di protocollo.</p>
+            <h3> Altre Tipologie di collegamento</h3>
+            <p> Questi link differiscono da quelli sopra perch&eacute; aprono risorse differenti, come programmi di posta, numeri di telefono (da smartphone) oppure scaricano dei file.</p>
+            <p> Alcuni esempi di link:</p>
+            <ul>
+                <li> Questa è la mia email <a href="mailto:raffaelecoppola381@gmail.com">Chiccami se ti va</a></li>
+                <li> collegamento al navigatore gps - <a href=" https://www.google.com/maps/dir//ILAS+ACADEMY+NAPOLI,+Via+Alcide+de+Gasperi,+45,+80133+Napoli+NA/@40.8421362,14.2534045,17z/data=!4m17!1m7!3m6!1s0x133b0846d41bf27f:0x63e9855988389fe1!2sILAS+ACADEMY+NAPOLI!8m2!3d40.8421322!4d14.2559794!16s%2Fg%2F1hhjxkd99!4m8!1m0!1m5!1m1!1s0x133b0846d41bf27f:0x63e9855988389fe1!2m2!1d14.2559794!2d40.8421322!3e1?authuser=0&entry=ttu"> Cliccami!!</a></li>
+                <li> Whatsapp number <a href="tel:3347814325"> Cliccami</a></li>
+                <li> Collegamento per il <a href="cartella 1/immagini/milano3.zip">Download!!</a></li>
+                <li> Contattami per sapere di più <a href="https://wa.me/393347814325?text=sei%scemo%si%o%no" target="_blank"> Messaggia!!</a></li>
+            </ul>
+        </section>
+        </main>
+     <footer><!-- inizio piedipagina-->
+            <p> &copy; Copyright by Raffaele Coppola</p>
+     </footer> 
+    </body>
+</html>

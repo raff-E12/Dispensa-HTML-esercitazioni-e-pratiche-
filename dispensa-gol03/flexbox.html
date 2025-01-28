@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - Contenitore Flessibili</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br>  Contenitore Flessibili</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Flexbox</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>Flexbox e i contenitori flessibili</h2>
+            <p>Flexbox &grave; un nuovo modo di creare layout &quot;flessibili&quot;, grazie alle nuove propriet&agrave; css che permettono di allineare, distribuire e gestire elementi e spazi tra questi ultimi. Inoltre ci permette di gestire tutto questo da un singolo elemento contenitore. <br> Per rendere un contenitore flessibile bisogna dichiarare la propriet&agrave; display ed impostarla sul valore <strong>flex</strong></p>
+            <h3>Le propriet&agrave; css da usare</h3>
+            <h4>display:flex</h4>
+            <p>La prima propriet&agrave; da dichiarare &egrave; <span class="codice">display:flex.</span> Va dichiarata sul contenitore. Di default, dopo aver impostato la propriet&agrave; display:flex, automaticamente gli elementi all'interno di questo contenitore si dispongono in riga.</p>
+            <h4>flex-direction</h4>
+            <p><span class="codice">Flex direction: row | row-reverse | column | column-reverse</span>, stabilisce l'asse principale e definisce la direzione in cui gli elementi flessibili vengono posizionati nel contenitore. Quindi gli elementi possono essere disposti in riga o in colonna. Reverse, indica l'ordine degli elementi (partendo dall'ultimo verso il primo).</p>
+            <h4>flex-wrap</h4>
+            <p>Con la propriet&agrave; <span class="codice">flex-wrap:nowrap | wrap | wrap-reverse</span> possiamo dire agli elementi presenti in un contenitore flex di consentire o meno il ritorno a capo. Di default questa propriet&agrave; &egrave; impostata su <span class="codice">nowrap</span>, quindi gli elementi cercano di adattarsi su una singola riga, non tenendo conto della larghezza(se impostata) degli elementi nel contenitore flessibile.</p>
+            <h4>justify-content</h4>
+            <p>Questa propriet&agrave; ci permette di allineare gli elementi sull'asse principale, permettendoci di distribuire lo spazio presente sull'asse. <span class="codice">justify-content: flex-start(o start, valore di default) | flex-end(o end) | center | space-between | space-around | space-evenly.</span></p>
+            <h4>align-items</h4>
+            <p>Con la propriet&agrave; <span class="codice">align-items: flex-start | flex-end | center | stretch | baseline</span> possiamo allineare gli elementi sull'asse secondario, ossia quello perpendicolare al principale.</p>
+
+            <p>vedi esercizio flexbox <a href="es_flexbox.html">qui</a></p>
+        </section>
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

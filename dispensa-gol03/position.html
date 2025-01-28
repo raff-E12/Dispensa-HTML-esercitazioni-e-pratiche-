@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - La propriet&agrave; Position</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br>  La propriet&agrave; Position</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Flexbox</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>La propriet&agrave; Position</h2>
+            <p>Quando il browser incontra un elemento nel markup, lo visualizza nell'esatta sequenza in cui si trova rispetto agli altri elementi, che nel markup, precedono, seguono o affiancano. Se l'elemento &eacute; selezionato da un selettore css e ha impostato la propriet&agrave; position su quest'ultimo, pu&ograve; essere estrapolato dal normale flusso del markup. <br>Position indica quale posizione deve assumere un elemento rispetto al normale flusso. Il valore di default &grave; position:static;</p>
+            
+        </section>
+
+        <section>
+            <h3>position: fixed</h3>
+            <p>L'elemento che assume <strong>position:fixed</strong> viene sottratto al normale flusso del documento e assume una posizione detta fissa, le cui coordinate sono <strong>relative</strong> al viewport. Non scrollano insieme agli altri elementi statici.</p>
+
+            <h3>position:relative</h3>
+            <p>La visualizzazione di un elemento con questo settaggio non varia rispetto al valore di default (position:static), ma rende questo elemento in grado di accettare al suo interno uno o pi&ugrave; elementi con il valore di position impostato su absolute (position:absolute).</p>
+
+            <h3>position:absolute</h3>
+            <p>L'elemento con <strong>position:absolute</strong> assume le coordinate dell'elemento alla quale &egrave; nidificato, con propriet&agrave; position:relative. Anche gli elementi in position:absolute, come quelli in fixed, assumono dimensioni degli elementi contenuti e occorre scriverne le coordinate. </p>
+
+            <h3>position:sticky</h3>
+            <p>La visualizzazione di un elemento con questo settaggio segue il flusso degli elementi nel markup, fin quando, scrollando all'interno della pagina, non raggiunge la sua coordinata impostata nella regola css. In quel punto assume position:fixed e resta ancorata a quella coordinata.</p>
+
+        </section>
+
+        <section>
+            <h3>z-index</h3>
+            <p>La propriet&agrave; z-index specifica l'ordine di sovrapposizione che gli elementi in position:relative o absolute o fixed o sticky, possono avere. Se non impostato seguono un ordine dettato dall'ordine di scrittura nel markup. </p>
+        </section>
+
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

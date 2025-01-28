@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - Fogli di stile</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br> Fogli di stile</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Flexbox</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>I fogli di stile (cascading stylesheet)</h2>
+            <p>I fogli di stile sono degli insiemi di regole che indicano al browser come visualizzare singoli elementi sulla pagina. Ciascuna REGOLA contiene una o pi&ugrave; <strong>propriet&agrave;</strong>.</p>
+            <h3>Sintassi di una regola</h3>
+            <p>selettore{propriet&agrave;:valore[unit&agrave; di misura]; propriet&agrave;:valore[unit&agrave; di misura];...}</p>
+            <p>es:</p>
+            <p>h1{color:#ff0000; font-size:28px}</p>
+        </section>
+        <section>
+            <h2>Dove si scrivono le regole css?</h2>
+            <h3>Direttamente nel documento, in due modalit&agrave;</h3>
+            <p>L'insieme di regole pu&ograve; essere inserito direttamente all'interno dell'attributo style dentro il tag oppure nel tag style, dentro il tag head (consigliato).</p>
+            <p>Questi due metodi sono meno efficienti perch&eacute;,partendo dal presupposto che un sito debba avere gli stessi stili su tutte le pagine, ci costringerebbero a riscrivere tutte le regole su tutte le pagine. Inoltre in fase di manutenzione o modifica dovremmo apportare cambiamenti a tutte le pagine con quella regola.</p>
+            <p>Si utilizza esclusivamente quando una particolare pagina ha bisogno di una modifica specifica rispetto alle altre.</p>
+
+             <p style="color:red;">Questo testo &egrave; stato reso rosso con lo stile in linea sul tag p</p><!-- esempio di stile in linea -->
+
+             <h3>Esternamente alle pagine html</h3>
+             <p>L'insieme delle regole viene scritto in un file con estensione &quot;css&quot; generalmente in una sottocartella CSS. Sulle pagine del sito, nella sezione &lt;head&gt;, viene stabilita una relazione (rel) di tipo stylesheet ad un file (href) di tipo &quot;css&quot; (text/css)</p>
+                <pre>&lt;link href='URL' rel='stylesheet' type='text/css'&gt;</pre>
+        </section>
+        <section>
+            <h2>Tipi di selettore</h2>
+            <h3>Selettore Tag</h3>
+            <p>Un <span class="testoRosso">selettore</span> di tipo tag modifica tutte le istanze di quel tag specifico. Ad esempio, se creo una regola del tipo <pre>p{font-size:18px; color:red;}</pre>, qualsiasi tag p della nostra pagina html avr&agrave; fonst-size 18px e color red.</p>
+
+            <h3 class="testoRosso">ID</h3>
+            <p>Selettore arbitrario, cio&egrave; non legato ad alcun tag nello specifico, ma applicabile ad esso tramite l'attributo <strong id="esempioId">id</strong>. Il nome di un id deve avere come prefisso il carattere (#) quando viene richiamato all'interno del codice css. Generalmente si usa una lettera minuscola come iniziale e pu&ograve; contenere solo caratteri alfanumerici, trattino -, underscore _. <br><strong>N.B. un id pu&ograve; essere assegnato ad un solo ed unico elemento sulla pagina html.</strong></p>
+
+            <h3 class="testoRosso">Selettore Classe</h3>
+            <p>Selettore arbitrario, cio&egrave; non legato ad alcun tag nello specifico, ma applicabile ad esso tramite l'attributo <strong>class</strong>. Il nome di una classe deve avere come prefisso il carattere (.) quando viene richiamato all'interno del codice css. Generalmente si usa una lettera minuscola come iniziale e pu&ograve; contenere solo caratteri alfanumerici, trattino -, underscore _. <br>
+            <strong>N.B. una classe pu&ograve; essere assegnata pi&ugrave; volte sulla stessa pagina, anche su elementi differenti.</strong></p>
+
+            <h3>Selettore multiplo</h3>
+            <p>Seleziona contemporaneamente pi&ugrave; di un elemento. La regola elenca gli elementi selezionati separati da una virgola. Le propriet&agrave; tra parentesi graffe vengono applicare a tutti i selettori elencati.</p>
+            <pre>selettore1, selettore2, selettore3, ... {propriet&agrave;:valore[um]}</pre>
+            <pre>.classe1, #id3, h2{color:yellow}</pre>
+
+            <h3>Selettore composto</h3>
+            <p>Indica la sequenza specifica all'interno della quale il selettore applicher&agrave; le propriet&agrave; css descritte nella regola. I selettori composti servono a selezionare uno o pi&ugrave; elementi in maniera pi&ugrave; specifica.Perch&eacute; le propriet&agrave; descritte vengano applicate, il selettore (ultimo elemento a destra) deve trovarsi nidificato negli elementi alla sua sinistra.</p>
+            <pre>
+                selettoreEsterno1 selettoreEsterno2 selettore{proprietà:valore[um]}
+            </pre>
+            <pre>
+                nav ul li a{
+                    color:darkcyan;
+                    text-decoration:none;
+                }
+            </pre>
+        </section>
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

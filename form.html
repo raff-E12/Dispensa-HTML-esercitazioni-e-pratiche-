@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="UTF-8">
+        <meta name="author" content="Raffy U.">
+        <meta name="description" content="sito generico">
+        <meta name="keywords" content="html, css, sass">
+        <title> Guida Html e Css Javascript - Form</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="Frame1.svg">
+        <link rel="manifest" href="dispensa 3/site.webmanifest">
+        <link rel="mask-icon" href="Frame1.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="Frame1.svg">
+        <meta name="msapplication-TileColor" content="#0100ff">
+        <meta name="msapplication-TileImage" content="frame1.svg">
+        <meta name="msapplication-config" content="dispensa 3/browserconfig.xml">
+        <meta name="theme-color" content="#3630af">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            .codice{
+                background-color: white;
+                text-decoration: wavy;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <header> 
+            <h1>Guida HTML, CSS e Javascript,<br> Introduzione allo studio dei linguaggi.</h1>
+        <nav> 
+            <ul>
+                <li> <a href="index.html" title="Homepage della guida HTML,CSS e Javascript"> Home</a></li>
+                <li> <a href="testi.html" title="i testi nel sito web"> Testi</a></li>
+                <li><a href="immagini.html" title="immagini del sito"> immagini</a></li>
+                <li><a href="link.html" title="link per i siti"> Link</a></li>
+                <li><a href="Iframes.html" title="iframe per i siti">Iframe</a></li>
+                <li><a href="Foglidistile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li><a href="box-model.html" title="Box Model">Box Model</a></li>
+                <li><a href="block-inline.html" title="Box Model">Block-inline</a></li>
+                <li><a href="position.html" title="Position">Position</a></li>
+                <li><a href="floating.html" title="Floating">Floating</a></li>
+                <li><a href="flexbox.html" title="Flexbox">Flexbox</a></li>
+                <li><a href="transform-transition.html" title="Transform e Transition">Transform - Transition</a></li>
+                <li><a href="form.html" title="Form" id="linkAttivo">Form</a></li>
+                <li><a href="dispensa-gol03/index.html" title="Dispensa">Dispensa Gol</a></li>
+                <li><a href="Esercizio-laylout.html" title="Layout">Esercizio Layout</a></li>
+                <li><a href="Boot-Strap lezioni/index.html" title="Boot-Strap">Bootstrap Accademy</a></li>
+                <li><a href="travel-company/index.html" title="Esercizio-figma">Travel Company (Progetto)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Invio di dati dal sito</h2>
+            <p>L'utente può interagire con il nostro sito in vari modi ed uno di questi, i form, permettono all'utente di inviare ed informazioni attraverso internet.
+              I form sono moduli di contratto (login, registrazione, modifica e cancellazione) che raccolgono o modificano i dati tramite email o database.</p>
+              <h4>Nota</h4>
+              <p>Dagli inizi del 2017, google ha iniziato a penalizzare i siti che raccolgono dati servendosi del protocollo http, previlaggiando i siti che si servono solo il protocollo https.</p>
+              <h2>Form di Esempio</h2>
+              <p>Il tag form indica e delimita l'inizio e la fine di un modulo di raccolta dati.</p>
+              <p class="codice">&lt;form action=&quot;URL(lato server che processa i dati) method=&quot;post/get&quot; enctype=&quot;text/plain - multipart/form-data(tipologia di dati passati)&quot;&gt; &lt;/form&gt;</p>
+              <form action="#" method="post" id="formContattoEsempio">
+                <label for="nome-cognome">Nome e cognome</label>
+                <input type="text" name="nome-cognome" id="nome-cognome" required placeholder="Inserisci nome e cognome" pattern="(?=.{2,}$)(([a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõőøùúûüųūűÿýżźñçčšžÀÁ ÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕŐØÙÚÛÜŲŪŰŸÝŻŹÑßÇŒÆČŠŽ∂ð ,\.\'\-])\2?(?!\2))+"><br>
+                <label for="email-utente">Email</label>
+                <input type="email"  name="email-utente" id="email-utente" required placeholder="inserisci la tua email"><br>
+                <label for="data-nascita">Data di Nascita</label>
+                <input type="date" name="data-nascita" id="data-nascita" required><br>
+                <label for="genere">Genere</label><br>
+                <input type="radio" name="genere" id="genere"  value="M"  required>M
+                <input type="radio" name="genere" id="genere" value="F" required>F<br>
+                <label for="titolo-studio">Seleziona il titolo di studio</label><br>
+                <select name="titolo-studio" id="titolo-studio" placeholder="seleziona">
+                    <option value="Diploma">Diploma</option>
+                    <option value="Licenza Media">Licenza Media</option>
+                    <option value="Laurea Triennale">Laurea Triennale</option>
+                    <option value="Laura Magistrale">Laurea Magistrale</option>
+                </select><br>
+                <label for="accettazione">
+                    <input type="checkbox" name="accettazione" id="accettazione" required value="si"> Ho letto ed accettato la <a href="#" target="_blank">privacy policy</a> del vostro sito web.
+                </label><br>
+                <input type="submit" value="Invia Messaggio"><br>
+                <br>
+            </form>
+
+        </section>
+    </main>  
+     <footer><!-- inizio piedipagina-->
+            <p> &copy; Copyright by Raffaele Coppola</p>
+     </footer> 
+    </body>
+</html>

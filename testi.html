@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="charset" content="UTF-8">
+        <meta name="author" content="Raffy U.">
+        <meta name="description" content="sito generico">
+        <meta name="keywords" content="html, css, sass">
+        <title> Guida Html e Css Javascript - i testi</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="Frame1.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="Frame1.svg">
+        <link rel="manifest" href="dispensa 3/site.webmanifest">
+        <link rel="mask-icon" href="Frame1.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="Frame1.svg">
+        <meta name="msapplication-TileColor" content="#0100ff">
+        <meta name="msapplication-TileImage" content="frame1.svg">
+        <meta name="msapplication-config" content="dispensa 3/browserconfig.xml">
+        <meta name="theme-color" content="#3630af">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <header> 
+            <h1>Guida HTML, CSS e Javascript,<br> Introduzione allo studio dei linguaggi.</h1>
+        <nav> 
+            <ul>
+                <li> <a href="index.html" title="Homepage della guida HTML,CSS e Javascript"> Home</a></li>
+                <li> <a href="testi.html" title="i testi nel sito web" id="linkAttivo"> Testi</a></li>
+                <li><a href="immagini.html" title="immagini del sito"> immagini</a></li>
+                <li><a href="link.html" title="link per i siti"> Link</a></li>
+                <li><a href="Iframes.html" title="iframe per i siti">Iframe</a></li>
+                <li><a href="Foglidistile.html" title="Folgi di stile">Fogli di stile</a></li>
+                <li><a href="box-model.html" title="Box Model">Box Model</a></li>
+                <li><a href="block-inline.html" title="Blocco e inline">Block-Inline</a></li>
+                <li><a href="position.html" title="Position" >Position</a></li>
+                <li><a href="floating.html" title="Floating">Floating</a></li>
+                <li><a href="flexbox.html" title="Flexbox">Flexbox</a></li>
+                <li><a href="transform-transition.html" title="Transform e Transition">Transform - Transition</a></li>
+                <li><a href="form.html" title="Form">Form</a></li>
+                <li><a href="dispensa-gol03/index.html" title="Dispensa">Dispensa Gol</a></li>
+                <li><a href="Esercizio-laylout.html" title="Layout">Esercizio Layout</a></li>
+                <li><a href="Boot-Strap lezioni/index.html" title="Boot-Strap">Bootstrap Accademy</a></li>
+                <li><a href="travel-company/index.html" title="Esercizio-figma">Travel Company (Progetto)</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section>
+            <h1> Titolo</h1>
+            </section>
+            <h1> h1 Titolo</h1>
+            <h2> h2 Titolo</h2>
+            <h3> h3 Titolo</h3>
+            <h4> h4 Titolo</h4>
+            <h5> h5 Titolo</h5>
+            <section>
+                <h2>Segni e caratteri speciali</h2>
+                <p>I simboli presenti sulla tastiera e non, sono detti segni o caratteri speciali. Inoltre dato che alcuni caratteri sono significativi per il linguaggio html &#40;si pensi, ad esempio, ai segni di minore e maggiore che delimitano i tag &#41; non possono essere scritti cos&iacute; come vengono visualizzati nel browser. es. &lt; &gt; &copy; &reg;</p>
+            </section>
+            
+            <section>
+                <h2>Spazi e ritorni a capo</h2>
+                <p>All'interno del testo web non &egrave; possibile rappresentare pi&uacute; di uno spazio consecutivo, anche se lo inseriamo direttamente nel markup (codice html).</p>
+                <p>Quando si ha bisogno di pi&uacute; spazi consecutivi esiste un carattere speciale &nbsp;&nbsp;&nbsp;&nbsp; &amp;nbsp; &amp;</p>
+                <p>Quando vogliamo forzare il ritorno a capo, possiamo invece utilizzare il tag &lt;br&gt;. Per ottenerlo in dreamweaver usiamo la scorciatoia SHIFT + INVIO <br> questo per esempio &egrave; un rimando a capo forzato.</p>
+            </section>
+            
+            <section>
+                <h2>Mettere in risalto i testi</h2>
+                <p> L'html dispone di un tag <strong>&lt;strong&gt;</strong> per evidenziare il testo e metterlo in <b>grassetto</b>, dando anche un'importanza semantica a quelle parole. <br> <!-- prima di usare il tag strong si usava il tag <b> che sta per bold -->
+                Se usato con buon senso ha anche una certa rilevanza in termini SEO.</p>
+                <p>Poi <i>esiste</i> la possibilit&aacute; di <em>mettere il testo in corsivo mediante il tag &lt;em&gt;</em></p>
+                <!--  prima di usare il tag em si usava il tag i che sta per italic -->
+            </section>
+            
+            <section>
+                <h2>Le liste</h2>
+                <p>L'html dispone di elenchi ordinati (numericamente o alfabeticamente) detti <strong>ol, ordered list,</strong> ed elenchi non ordinati detti <strong>ul, unordered list</strong>, i cui punti di lista anzich&egrave; essere preceduti da un numero sono preceduti da un simbolo (punto, quadratino, un'immagine, etc...). All'interno di ol e ul troviamo il <strong>tag &lt;li&gt;, list item</strong> che indicano il singolo punto di lista.</p>
+                
+                <ol style="margin-left: 30px;">
+                    <li>Gennaio</li>
+                    <li>Febbraio</li>
+                    <li>Marzo</li>
+                    <li>Aprile</li>
+                    <li>Maggio</li>
+                    <li>Giugno</li>
+                    <li>Luglio</li>
+                    <li>Agosto</li>
+                    <li>Settembre</li>
+                    <li>Ottobre</li>
+                    <li>Novembre</li>
+                    <li>Dicembre</li>
+                </ol>
+                <ul style="margin-left: 30px;">
+                    <li>Luned&iacute;</li>
+                    <li>Marted&iacute;</li>
+                    <li>Mercoled&iacute;</li>
+                    <li>Gioved&iacute;</li>
+                    <li>Venerd&iacute;</li>
+                    <li>Sabato</li>
+                    <li>Domenica</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Righelli orizzontali</h2>
+                <hr>
+                <p>Vengono utilizzati per separare visivamente due sezioni della pagina web.</p>
+                <ul>
+                    <li> Questa è la mia email <a href="mailto:raffaelecoppola381@gmail.com">Chiccami se ti va</a></li>
+                    <li> collegamento al navigatore gps - <a href=" https://www.google.com/maps/dir//ILAS+ACADEMY+NAPOLI,+Via+Alcide+de+Gasperi,+45,+80133+Napoli+NA/@40.8421362,14.2534045,17z/data=!4m17!1m7!3m6!1s0x133b0846d41bf27f:0x63e9855988389fe1!2sILAS+ACADEMY+NAPOLI!8m2!3d40.8421322!4d14.2559794!16s%2Fg%2F1hhjxkd99!4m8!1m0!1m5!1m1!1s0x133b0846d41bf27f:0x63e9855988389fe1!2m2!1d14.2559794!2d40.8421322!3e1?authuser=0&entry=ttu"> Cliccami!!</a></li>
+                    <li> Whatsapp number <a href="tel:3347814325"> Cliccami</a></li>
+                    <li> Collegamento per il <a href="cartella 1/immagini/milano3.zip">Download!!</a></li>
+                    <li> Contattami per sapere di più <a href="https://wa.me/393347814325?text=sei%scemo%si%o%no" target="_blank"> Messaggia!!</a></li>
+                </ul>
+            </section>
+            </section>
+        </main>
+     <footer><!-- inizio piedipagina-->
+            <p> &copy; Copyright by Raffaele Coppola</p>
+     </footer> 
+    </body>
+</html>

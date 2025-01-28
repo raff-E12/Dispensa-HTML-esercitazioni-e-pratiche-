@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Html5, Css e Javascript - i testi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- collegamento al foglio di stile -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Intestazione del nostro documento html, di solito contiene logo e menu di navigazione o icone come carrello, account utente o barra di ricerca-->
+    <header> 
+        <h1>Guida Html5, Css e Javascript <br> I testi nel web</h1>
+
+        <div>
+            <div id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Inizio Barra di navigazione -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="index.html" title="homepage della guida html, css e Javascript">Home</a> </li>
+                <li> <a href="testi.html" title="i testi nel web">Testi</a></li>
+                <li> <a href="immagini.html" title="le immagini nel web">Immagini</a></li>
+                <li> <a href="link.html" title="i collegamenti ipertestuali">Link</a></li>
+                <li> <a href="iframe.html" title="Gli iframes">Iframe</a></li>
+                <li> <a href="fogli-di-stile.html" title="Fogli di stile">Fogli di stile</a></li>
+                <li> <a href="box-model.html" title="Il box model">Box model</a></li>
+                <li> <a href="block-inline.html" title="Block / Inline">Block / Inline</a></li>
+                <li> <a href="tabelle.html" title="Le tabelle">Le tabelle</a></li>
+                <li> <a href="position.html" title="La propriet&agrave; Position">Position</a></li>
+                <li> <a href="floating.html" title="La propriet&agrave; Float">Floating</a></li>
+                <li> <a href="flexbox.html" title="I contenitori flessibili">Flexbox</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+        <!-- Fine Barra di navigazione -->
+    </header>
+    <!-- Fine instestazione -->
+
+    <!--Inizio contenuto principale della pagina-->
+    <main>
+        <section>
+            <h2>I titoli</h2>
+            <p>I titoli, oppure headings, in html hanno sei diversi tag</p>
+            <hr>
+            <h1>Titolo h1</h1>
+            <h2>Titolo h2</h2>
+            <h3>Titolo h3</h3>
+            <h4>Titolo h4</h4>
+            <h5>Titolo h5</h5>
+            <h6>Titolo h6</h6>
+        </section>
+        <section>
+            <h2>i paragrafi</h2>
+            <p>il tag &lt;p&gt; serve per contenere i testi e delimita un paragrafo.</p> 
+            <p>Tra un paragrafo e l'altro l'HTML interpone automaticamente uno spazio. Una corretta divisione di un argomento in paragrafi ne favorisce la leggibilit&agrave; e la memorizzazione. <br> Ricordiamo che lo spazio conferisce ritmo visivo alla lettura; equivale in sostanza alle pause che vengono prese durante la comunicazione verbale.</p>
+        </section>
+
+        <section>
+			<h2>Segni e caratteri speciali</h2>
+			<p>I simboli presenti sulla tastiera e non, sono detti segni o caratteri speciali. Inoltre dato che alcuni caratteri sono significativi per il linguaggio html &#40;si pensi, ad esempio, ai segni di minore e maggiore che delimitano i tag &#41; non possono essere scritti cos&iacute; come vengono visualizzati nel browser. es. &lt; &gt; &copy; &reg; &amp;</p>
+		</section>
+		
+		<section>
+			<h2>Spazi e ritorni a capo</h2>
+			<p>All'interno del testo web non &egrave; possibile                rappresentare pi&uacute; di uno spazio consecutivo, anche se lo inseriamo direttamente nel markup (codice html).</p>
+			<p>Quando si ha bisogno di pi&uacute; spazi consecutivi esiste un carattere speciale &nbsp;&nbsp;&nbsp;&nbsp; &amp;nbsp; </p>
+			<p>Quando vogliamo forzare il ritorno a capo, possiamo invece utilizzare il tag &lt;br&gt;. Per ottenerlo in dreamweaver usiamo la scorciatoia SHIFT + INVIO <br> questo per esempio &egrave; un rimando a capo forzato.</p>
+            <p>esempio di pi&ugrave; spazi &nbsp;&nbsp;&nbsp; consecutivi</p> 
+            <!--L'uso di &nbsp; permette nell'html di creare più di uno spazio consecutivo tra una parola e l'altra.-->
+		</section>
+		
+		<section>
+			<h2>Mettere in risalto i testi</h2>
+			<p> L'html dispone di un tag <strong>&lt;strong&gt;</strong> per evidenziare il testo e metterlo in <b>grassetto</b>, dando anche un'importanza semantica a quelle parole. <br> <!-- prima di usare il tag strong si usava il tag <b> che sta per bold -->
+			Se usato con buon senso ha anche una certa rilevanza in termini SEO.</p>
+			<p>Poi <i>esiste</i> la possibilit&aacute; di <em>mettere il testo in corsivo mediante il tag &lt;em&gt;</em></p>
+			<!--  prima di usare il tag em si usava il tag i che sta per italic -->
+		</section>
+		
+		<section>
+			<h2>Le liste</h2>
+			<p>L'html dispone di elenchi ordinati (numericamente o alfabeticamente) detti <strong>ol, ordered list,</strong> ed elenchi non ordinati detti <strong>ul, unordered list</strong>, i cui punti di lista anzich&egrave; essere preceduti da un numero sono preceduti da un simbolo (punto, quadratino, un'immagine, etc...). All'interno di ol e ul troviamo il <strong>tag &lt;li&gt;, list item</strong> che indicano il singolo punto di lista.</p>
+			
+			<ol style="margin-left: 30px;">
+				<li>Gennaio</li>
+				<li>Febbraio</li>
+				<li>Marzo</li>
+				<li>Aprile</li>
+				<li>Maggio</li>
+				<li>Giugno</li>
+				<li>Luglio</li>
+				<li>Agosto</li>
+				<li>Settembre</li>
+				<li>Ottobre</li>
+				<li>Novembre</li>
+				<li>Dicembre</li>
+			</ol>
+			
+			<ul style="margin-left: 30px;">
+				<li>Luned&iacute;</li>
+				<li>Marted&iacute;</li>
+				<li>Mercoled&iacute;</li>
+				<li>Gioved&iacute;</li>
+				<li>Venerd&iacute;</li>
+				<li>Sabato</li>
+				<li>Domenica</li>
+			</ul>
+			
+		</section>
+		
+		<section>
+			<h2>Righelli orizzontali</h2>
+			<hr>
+			<p>Vengono utilizzati per separare visivamente due sezioni della pagina web.</p>
+		</section>
+    </main>
+    <!--Fine contenuto principale della pagina-->
+
+    <!-- Inizio piè di pagina o fondo del documento -->
+    <footer>
+        <p>&copy; Copyright 2024 - Made by Ilas</p>
+    </footer>
+    <!-- Fine piè di pagina o fondo del documento -->
+    
+   
+
+
+
+
+
+
+</body>
+</html>

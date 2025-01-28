@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio contenitore 02</title>
+    <style>
+        .contenitore1{
+            width: 500px;
+            height: 500px;
+            background-color: #38389f;
+            border-left: 3px solid green;
+            border-right: 3px solid green;
+            border-top:2px dotted red;
+            border-bottom:2px dotted red;
+            margin-top: 37px;
+        }
+        .contenitore2{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(176, 54, 54);
+            border-radius: 10px;
+            border:4px solid darkgoldenrod;
+            margin-top: 51px;
+        }
+        #contenitore3{
+            width: 600px;
+            height: 300px;
+            background-color: rgba(189, 153, 108, 0.8);
+            border-top:1px solid red;
+            border-right:3px dashed green;
+            border-bottom:2px dotted blue;
+            border-left:4px solid orangered;
+            margin: 0 auto;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenitore1"></div>
+    <div class="contenitore2"></div>
+    <div id="contenitore3"></div>
+</body>
+</html>
+
+<!-- 
+    1) crea un contenitore che sia largo e alto 500px con sfondo colorato di una tonalità blue, con i bordi laterali uguali e quello superiore e inferiore, di color rosso e puntinato, distanza da sopra di 37px
+2)crea un contenitore che sia largo 200 e alto la metà, con sfondo colorato di una tonalità di rosso, con i bordi arrotondati, lineari e spessi 4 px, distanza dal precedente elemento di 51px
+3)Crea un contenitore largo 600px alto 300, con 4 bordi differenti tra di loro, sfondo colorato con un colore esposto in rgba, centralo in orizzontale e distanzialo dal precedente di 100px
+
+
+PER CASA
+1) crea un contenitore che sia largo 167px alto 221px con sfondo colorato, il colore esponilo in modalità rgba, 4 bordi lineari, arrotondati, distanza dal precedente elemento o dal bordo superiore del viewport 40px
+2)crea un contenitore che sia alto 500px largo 300px con bordo superiore e inferiore uguale puntinato e verde di spessore 4px. Imposta un colore di sfondo in esadecimale (hex), distanzialo dal bordo sinistro del viewport 50px e dal precedente elemento di 30px
+3)crea un contenitore centrato rispetto al viewport, largo 500px alto 70px, colore di sfondo tonalità di verde, 4 bordi differenti tra di loro.
+
+
+NOTA: usa per i 3 contenitori sempre il tag div e non scrivere lo stile in linea, puoi usare il tag style in pagina oppure inserire il codice css in un foglio di stile e collegarlo al file html.
+Il file html si chiamerà es_contenitore_03.html 
+
+
+se all'interno di figma disegno un contenitore largo 300px e alto 600px comprensivi di border:3px su tutti i lati e padding di 15px su tutti i lati, qual è il valore di width ed height da impostare in css?
+width:300-3-3-15-15 = 264
+height:600 -3 -3 -15 -15 = 564
+
+#boxTipo{
+    width:264px;
+    height:564px;
+    padding:15px;
+    border:3px solid yellow;
+}
+-->

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hello world!!</title>
+        <style>
+            body {
+                display: grid;
+                background-color: bisque;
+                grid-template-areas: "header header"
+                "nav nav" "main aside" "footer footer";
+                grid-template-rows: 160px 200px 300px 200px;
+                grid-template-columns: 900px 430px;
+                row-gap: 6px;
+                column-gap: 6px;
+            }
+
+            header {
+                background-color: #F2A007;
+                text-align: center;
+                display:block;
+                font-family: 'gotham black';
+                grid-area: header;
+            }
+
+            nav {
+                background-color: #ff5454;
+                text-align: center;
+                font-family: 'Gotham black';
+                grid-area: nav;
+            }
+
+            aside {
+                background-color: #2dc42d;
+                text-align: center;
+                font-family: 'Gotham black';
+                grid-area: aside;
+            }
+
+            main {
+                background-color: #9b6500;
+                text-align: center;
+                font-family: 'Gotham black';
+                grid-area: main;
+            }
+
+            footer {
+                background-color: #fffbc0;
+                text-align: center;
+                font-family: 'Gotham black';
+                grid-area: footer;
+            }
+
+            .div1{
+                background-color: #ff5454;
+                width: 300px;
+                height: 190px;
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .div1 p {
+                margin-top: -6px;
+            }
+
+
+            ul {
+                width: 200px;
+                background-color: #F2A007;
+                text-align: center;
+                font-family: 'Gotham Black';
+                align-items: center;
+                display: inline-flex;
+                flex-direction: column;
+            }
+
+            li{
+                display: block;
+                text-align: center;
+                padding-right: 30px;
+            }
+
+            /* Dropdown menu */
+
+            .div2{
+                position:fixed;
+                background-color: #91B221;
+                width: 1400px;
+                height: 50px;
+                margin-top: -10px;
+                margin-left: -10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .div2 a{
+                font-family: 'gotham black';
+                text-transform:uppercase;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+            }
+
+            .span1{
+                width: 600px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            #link1{
+                background-color: #E0762B;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+
+            #link2{
+                background-color: #E0762B;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+
+            #link4{
+                background-color: #E0762B;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+
+            .div3{
+                background-color:  #4fe02b;
+                text-align: center;
+                width: 100px;
+                height: 34px;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                overflow: hidden;
+            }
+            
+            #link3{
+                margin-top: 0px;
+                background-color: #E0762B;
+                width: 100px;
+                padding-bottom: 10px;
+                padding-top: 7px;
+            }
+
+            #link6{
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            #link5{
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            
+            .div2 a:hover{
+                color: #ff5454;
+                box-shadow: 0px 0px 30px black;
+            }
+
+
+            .div3:hover{
+                height: 100px;
+                margin-top: 65px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div2">
+            <span class="span1">
+                <a href=" " id="link1">Immagini</a>
+                <a href=" " id="link2"> Chips</a>
+            <div class="div3">
+                      <a href=" " id="link3"> Menu</a>        
+                    <a href=" " id="link6"> San Carlo</a>
+                    <a href=" " id="link5"> Wacko's</a>
+            </div>
+                <a href=" " id="link4"> Statua</a>
+            </span>
+        </div>
+        <header>
+            <h1> Header</h1>
+            <p> Laborum ad cupidatat incididunt sint qui deserunt occaecat occaecat elit veniam cillum dolor nulla. <br>
+                Culpa elit laboris velit do culpa consequat incididunt nostrud minim. Pariatur minim do nisi ea in.<br> 
+                Ut et duis mollit sunt officia qui ipsum voluptate ut labore irure irure.</p>
+        </header>
+        <nav>
+            <h1> Navigation </h1 >
+            <ul>
+                <li>Hello World 1 </li>
+                <li> Hello World 2</li>
+                <li> Hello World 3</li>
+                <li> Hello World 4</li>
+            </ul>
+        </nav>
+        <aside>
+            <h1> Side Bar</h1>
+            <p>Laborum ad cupidatat incididunt sint qui deserunt<br>
+                 occaecat occaecat elit veniam cillum dolor nulla.</p>
+        </aside>
+        <main> 
+            <h1>Section</h1>
+            <div class="div1">
+               <h1> Article </h1>
+                <p>Laborum ad cupidatat incididunt sint qui deserunt<br>
+                    occaecat occaecat elit veniam cillum dolor nulla.</p>
+            </div>
+            </main>
+        <footer>
+            <h1> Footer</h1>
+            <p>Laborum ad cupidatat incididunt sint qui deserunt occaecat <br>
+                occaecat elit veniam cillum dolor nulla.</p>
+        </footer>
+    </body>
+</html>

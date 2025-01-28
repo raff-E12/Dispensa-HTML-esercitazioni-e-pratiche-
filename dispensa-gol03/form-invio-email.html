@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio di form che invia dati tramite email</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        #formContatto{
+            width: 500px;
+            padding:20px;
+            background:gainsboro;
+            border-radius:12px;
+            border: 1px solid rgb(23, 118, 166);
+            margin:50px auto;
+            box-shadow: 0 0 5px rgba(23, 118, 166, 0.6);
+        }
+        #nomeUtente, #email-utente{
+            background-color: white;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid rgba(23, 118, 166, 0.4);
+            border-radius: 6px;
+            color: #666;
+            width: 60%;
+        }
+        #messaggio{
+            background-color: white;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid rgba(23, 118, 166, 0.4);
+            border-radius: 6px;
+            color: #666;
+            width: 100%;
+            min-height: 150px;
+            resize: none;
+        }
+        label{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            color:rgb(23, 118, 166);
+        }
+        ::placeholder{
+            color:rgba(23, 118, 166, 0.4)
+        }
+        #submitModuloContatto{
+            border: 1px solid rgba(23, 118, 166, 0.4);
+            border-radius: 6px;
+            color: white;
+            background-color: rgb(23, 118, 166);
+            padding:8px;
+            transition: all .3s ease-in-out;
+        }
+        #submitModuloContatto:hover{
+            cursor: pointer;
+            color:rgb(23, 118, 166);
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="formContatto">
+        <form action="invio-dati.php" method="post">
+            <label for="nomeUtente">
+                <p>Nome e Cognome</p>
+                <input type="text" name="nomeUtente" id="nomeUtente" required pattern="(?=.{2,}$)(([a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõőøùúûüųūűÿýżźñçčšžÀÁ ÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕŐØÙÚÛÜŲŪŰŸÝŻŹÑßÇŒÆČŠŽ∂ð ,\.\'\-])\2?(?!\2))+" placeholder="Inserisci nome e cognome" autocomplete="name">
+            </label>
+            <label for="email-utente">
+                <p>E-mail</p>
+                <input type="email" name="email-utente" id="email-utente" required placeholder="Inserisci la tua e-mail" autocomplete="email" pattern="(([a-zA-Z]|[0-9])|([-]|[_]|[.]))+[@](([a-zA-Z0-9])|([-])){2,63}[.](([a-zA-Z0-9]){2,63})+">
+            </label>
+
+            <label for="messaggio">
+                <p>Scrivi il tuo messaggio</p>
+                <textarea name="messaggio" id="messaggio" placeholder="Inserisci qui il tuo messaggio per noi" required></textarea>
+            </label>
+
+            <label for="accettazione">
+                <p><input type="checkbox" name="accettazione" id="accettazione" value="si" required>Ho letto ed accettato la <a href="#" target="_blank">privacy policy</a> del vostro sito web.</p>
+            </label>
+            <input type="submit" value="Invia il messaggio" id="submitModuloContatto">
+        </form>
+    </div>
+</body>
+</html>

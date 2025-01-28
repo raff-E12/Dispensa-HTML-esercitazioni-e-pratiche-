@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test layout ui</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        #mainHeader{
+            height: 60px;
+            background-color: #0ADFAC;
+            padding:10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo{
+            font-size: 36px;
+            font-family:'DM Serif Display', sans-serif ;
+            color:white;
+        }
+        #menuDesk ul{
+            list-style: none;
+            display: flex;
+        }
+        #menuDesk ul li a{
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Poppins',sans-serif;
+            padding:0 15px;
+        
+        }
+        #heroSection{
+            width: 100%;
+            height: 600px;
+            background-image: url('img/bg-hero-section.jpg');
+            background-size: cover;
+            background-position:center;
+            display: flex;
+            padding:0 2%;
+            align-items: center;
+        }
+        #boxClaim{
+            width: 40%;
+            border:2px solid rgba(255, 255,255,0.6);
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            backdrop-filter: blur(3px);
+            padding:30px;
+        }
+        #boxClaim h1{
+            font-size: 42px;
+            color: white;
+        }
+        .headingBox{
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            border-bottom: 1px solid white;
+        }
+        #services{
+            padding:2%;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .col30{
+            width: 30%;
+            padding:20px;
+        }
+        .bgGrey{
+            background-color: #F2F2F2;
+        }
+        .bgAcqua{
+            background-color: #0ADFAC;
+        }
+    </style>
+</head>
+<body>
+    <header id="mainHeader">
+        <div id="logo">
+            ML Agency
+        </div>
+        <nav id="menuDesk">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">tour</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="heroSection">
+            <div id="boxClaim">
+                <p class="headingBox">Travel Company</p>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, debitis! Sit harum sint beatae, pariatur saepe!</h1>
+    
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="col30 bgGrey">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis ipsam eos animi veniam. Porro explicabo illo laborum numquam ea, quis nemo libero consequatur reiciendis eos qui sequi, similique neque.
+                </p>
+            </div>
+            <div class="col30 bgAcqua">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis ipsam eos animi veniam. Porro explicabo illo laborum numquam ea, quis nemo libero consequatur reiciendis eos qui sequi, similique neque.
+                </p>
+            </div>
+            <div class="col30" style="background-image: url('img/bg-box-test.png'); background-size: cover; background-position: center;">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis ipsam eos animi veniam. Porro explicabo illo laborum numquam ea, quis nemo libero consequatur reiciendis eos qui sequi, similique neque.
+                </p>
+            </div>
+            
+        </section>
+    
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
